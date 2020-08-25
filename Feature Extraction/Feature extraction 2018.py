@@ -13,10 +13,8 @@ from scipy.optimize import curve_fit
 # c	- y-asymptote
 #Returns y value
 def exponential(x, a, b, c):
-    
-
-	y = a * np.exp(-b * x) + c
-	return y
+    y = a * np.exp(-b * x) + c
+    return y
 
 def power_law(x, a, b, c):
     return a * np.power(x, b) + c
@@ -77,7 +75,6 @@ for i in filenames:
             except RuntimeError as e:
                 pass
             
-            #print(i_col_info.iat[j,0])
             print(i)
             print("Position sigma 1:", pos_sigma_a)
             print("Position sigma 2:", pos_sigma_b)
