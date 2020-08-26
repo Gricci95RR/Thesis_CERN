@@ -32,6 +32,7 @@ for i in filenames:
     df2 = pd.read_csv(i, skiprows=10, header = None)
     df3 = pd.concat([df, df2])
     df4 = pd.read_csv(i, skiprows=11, header = None) # dataframe with only BLM values
+    df4 = df4 * 1000000
     theta = df3.iat[2,1]
     LU = df3.iat[5,1] 
     RU = df3.iat[7,1] 
@@ -69,18 +70,15 @@ for i in filenames:
             except RuntimeError as e:
                 pass
             
+            pass
             
-            try:
-                popt2, pcov = curve_fit(power_law, x, y)
-            except RuntimeError as e:
-                pass
-            
+        
             print(i)
             print("Position sigma 1:", pos_sigma_a)
             print("Position sigma 2:", pos_sigma_b)
             print("Maximum value:", max_val)
             print("Spike_height:", s_h)
             print("Exp_a, Exp_b, Exp_c:", popt)
-            print("Pow_a, Pow_b, Pow_c:", popt2)
+            
 
 
