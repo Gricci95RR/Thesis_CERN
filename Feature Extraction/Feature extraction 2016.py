@@ -19,9 +19,14 @@ def power_law(x, a, b, c):
 i_col_info = pd.read_csv(r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/col_info/2016/i_col_info.csv')
 # names of the files to import
 filenames = iglob('/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/GabyPhD2019-Training_data/data/no_spike/2016-04-02_i/*.csv')
-#17
+
 pos_sigma = []
 spike_height = []
+max_value = []
+exp = []
+beam_state = []
+beam_type = []
+spike = []
 for i in filenames:
     df = pd.read_csv(i, header = None, nrows=1) # string
     df1 = pd.read_csv(i, header = None, skiprows=1) # values
@@ -35,13 +40,17 @@ for i in filenames:
             sigma_x = i_col_info.iat[j,3]
             sigma_y = i_col_info.iat[j,4]
             theta =  i_col_info.iat[j,1]
-            pos_mm = df1.iat[0,1] #verify
+            pos_mm = df1.iat[len(df1)-1,1] 
             beam_size = math.sqrt((math.pow(sigma_x,2) * math.pow(math.cos(theta),2)) + (math.pow(sigma_y,2) * math.pow(math.sin(theta),2)))
-            pos_sigma_a = (pos_mm - centre) / beam_size
-            pos_sigma.append(pos_sigma_a)
+            if i[109:114] == 'Right':
+                pos_sigma_a = (centre - pos_mm) / beam_size
+                pos_sigma.append(pos_sigma_a)
+            else:
+                pos_sigma_a = (pos_mm - centre) / beam_size
+                pos_sigma.append(pos_sigma_a)
             
             # Spike_height
-            df_start = df1[df1[1] != pos_mm].index[0] #verify
+            df_start = df1[df1[1] == pos_mm].index[0] 
             df_end = df_start + 200 #df_start + 2 sec (100cells = 1sec)
             #Search df subset for max value
             df_subset = df1.iloc[df_start:df_end]
@@ -50,14 +59,18 @@ for i in filenames:
             #Steady state average before spike
             df_prev = df1.iloc[:df_start]
             avg = df_prev[df_prev.columns[2]].sum() / len(df_prev)
-            spike_height = max_val - avg
+            spike_height_a = max_val - avg
+            spike_height.append(spike_height_a)
+            max_value.append(max_val)
             
             # Exp fit
             end2 = max_index + 600 
             y = df1.iloc[max_index:end2,2] #time window of 6 seconds starting from the maximum value index
             x = np.arange(start=0, stop=len(y), step=1)
+            
             try:
                 popt, pcov = curve_fit(exponential, x, y)
+                exp.append(popt)
             except RuntimeError as e:
                 pass
             
@@ -67,9 +80,46 @@ for i in filenames:
             except RuntimeError as e:
                 pass
             
+            # Beam state (Inj or FT)
+            if i[107] == 'i':
+                beam_state.append('I')
+            elif i[107] == 'f':
+                beam_state.append('FT')
+            
+            # Beam type
+            beam_type.append('PROTON')
+            
+            # Spike
+            if i[87:95] == 'no_spike':
+                spike.append(0)
+            elif i[87:92] == 'spike': #verify
+                spike.append(1)
+                
+            '''    
             print(i)
             print("Position sigma:" ,pos_sigma_a)
             print("Maximum value:", max_val)
-            print("Spike height:", spike_height)
+            print("Spike height:", spike_height_a)
             print("Exp_a, Exp_b, Exp_c:", popt)
             print("Pow_a, Pow_b, Pow_c:", popt2)
+            '''
+
+exp_a = []
+exp_b = []
+exp_c = []
+for j in range(0,len(exp)):
+    exp_a.append(exp[j][0])
+    exp_b.append(exp[j][1])   
+    exp_c.append(exp[j][2])
+ 
+data = {'Position in sigma': pos_sigma,
+        'Spike height:': spike_height,
+        'Maximum value': max_value,
+        'Exp_a': exp_a,
+        'Exp_b': exp_b,
+        'Exp_c': exp_c,
+        'Beam Type': beam_type,
+        'Beam State': beam_state,
+        'Spike': spike}
+df2 = pd.DataFrame (data) 
+print(df2)
