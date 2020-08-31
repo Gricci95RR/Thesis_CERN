@@ -18,7 +18,8 @@ def power_law(x, a, b, c):
 # import of i_col_info 2016
 i_col_info = pd.read_csv(r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/col_info/2016/i_col_info.csv')
 # names of the files to import
-filenames = iglob('/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/GabyPhD2019-Training_data/data/no_spike/2016-04-02_i/*.csv')
+filenames = iglob(
+    '/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/GabyPhD2019-Training_data/data/no_spike/2016-04-02_i/*.csv')
 
 pos_sigma = []
 spike_height = []
@@ -27,6 +28,8 @@ exp = []
 beam_state = []
 beam_type = []
 spike = []
+jaw = []
+collimator_type = []
 for i in filenames:
     df = pd.read_csv(i, header = None, nrows=1) # string
     df1 = pd.read_csv(i, header = None, skiprows=1) # values
@@ -42,10 +45,10 @@ for i in filenames:
             theta =  i_col_info.iat[j,1]
             pos_mm = df1.iat[len(df1)-1,1] 
             beam_size = math.sqrt((math.pow(sigma_x,2) * math.pow(math.cos(theta),2)) + (math.pow(sigma_y,2) * math.pow(math.sin(theta),2)))
-            if i[109:114] == 'Right':
+            if i[109:114] == 'Right' or i[106:111] == 'Right':
                 pos_sigma_a = (centre - pos_mm) / beam_size
                 pos_sigma.append(pos_sigma_a)
-            else:
+            elif i[109:113] == 'Left' or i[106:110] == 'Left':
                 pos_sigma_a = (pos_mm - centre) / beam_size
                 pos_sigma.append(pos_sigma_a)
             
@@ -81,9 +84,9 @@ for i in filenames:
                 pass
             
             # Beam state (Inj or FT)
-            if i[107] == 'i':
+            if i[103:105] == '_i' or i[106:108] == '_i':
                 beam_state.append('I')
-            elif i[107] == 'f':
+            elif i[103:105] == '_f' or i[106:108] == '_f':
                 beam_state.append('FT')
             
             # Beam type
@@ -94,7 +97,24 @@ for i in filenames:
                 spike.append(0)
             elif i[87:92] == 'spike': #verify
                 spike.append(1)
+             
+            # Jaw (0 = Left, 1 = Right)
+            if i[109:114] == 'Right' or i[106:111] == 'Right':
+                jaw.append(1)
+            elif i[109:113] == 'Left' or i[106:110] == 'Left':
+                jaw.append(0)
+            
+            # collimator type
+            collimator_name = df.iloc[0][2]
+            collimator_name = collimator_name[17:]
+            
+            for kk in range(0, len(collimator_name)):
+                if collimator_name[kk] == "." and kk<6:
+                    collimator_type.append(collimator_name[:kk])
                 
+                
+            
+                   
             '''    
             print(i)
             print("Position sigma:" ,pos_sigma_a)
@@ -112,14 +132,20 @@ for j in range(0,len(exp)):
     exp_b.append(exp[j][1])   
     exp_c.append(exp[j][2])
  
-data = {'Position in sigma': pos_sigma,
-        'Spike height:': spike_height,
+data = {'Jaw': jaw,
+        'Spike height': spike_height,
+        'Position in sigma': pos_sigma,
         'Maximum value': max_value,
         'Exp_a': exp_a,
         'Exp_b': exp_b,
         'Exp_c': exp_c,
+        'Spike': spike,
+        'Collimator type': collimator_type,
         'Beam Type': beam_type,
-        'Beam State': beam_state,
-        'Spike': spike}
+        'Beam State': beam_state
+        }
+
 df2 = pd.DataFrame (data) 
 print(df2)
+
+df2.to_csv('2016-04-02_i.csv')
