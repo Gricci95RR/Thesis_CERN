@@ -29,12 +29,13 @@ pos_sigma2 = []
 spike_height = []
 max_value = []
 exp = []
+collimator_type = []
 
 beam_state = []
 beam_type = []
 spike = []
 jaw = []
-collimator_type = []
+
 for i in filenames:
     df = pd.read_csv(i, sep="=", header = None, nrows=9)
     df2 = pd.read_csv(i, skiprows=10, header = None)
@@ -81,14 +82,19 @@ for i in filenames:
                 pass
             
             pass
-            
+            # collimator type
+            for kk in range(0, len(name2)):
+                if name2[kk] == "." and kk<6:
+                    collimator_type.append(name2[:kk])
             
             print(i)
+            
             print("Position sigma 1:", pos_sigma_a)
             print("Position sigma 2:", pos_sigma_b)
             print("Maximum value:", max_val)
             print("Spike_height:", s_h)
             print("Exp_a, Exp_b, Exp_c:", popt)
+
 
 exp_a = []
 exp_b = []

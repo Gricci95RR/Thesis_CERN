@@ -4,7 +4,7 @@ import numpy as np
 
 # 1) "1-test_2018"
 # Load of all TCP features from "1-test_2018"
-path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/1-test_2018/*_TCP.*_Align_features'
+path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/1-test_2018/*_TCP*_Align_features'
 all_rec = iglob(path, recursive=True)     
 dataframes = (pd.read_csv(f) for f in all_rec)
 TCP_features = pd.concat(dataframes, ignore_index=True)
@@ -16,7 +16,7 @@ TCP_features["beam_type"] = "PROTON"
 TCP_features["beam_state"] = "I"
 
 # Load of all TCSG features from "1-test_2018"
-path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/1-test_2018/*_TCSG.*_Align_features'
+path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/1-test_2018/*_TCSG*_Align_features'
 all_rec = iglob(path, recursive=True)     
 dataframes = (pd.read_csv(f) for f in all_rec)
 TCSG_features = pd.concat(dataframes, ignore_index=True)
@@ -29,7 +29,7 @@ TCSG_features["beam_type"] = "PROTON"
 TCSG_features["beam_state"] = "I"
 
 # Load of all TCLA features from "1-test_2018"
-path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/1-test_2018/*_TCLA.*_Align_features'
+path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/1-test_2018/*_TCLA*_Align_features'
 all_rec = iglob(path, recursive=True)     
 dataframes = (pd.read_csv(f) for f in all_rec)
 TCLA_features = pd.concat(dataframes, ignore_index=True)
@@ -61,7 +61,7 @@ I_test_2018_dataframe.to_csv("I_test_2018_dataframe.csv")
 
 # 2) "2-test_2018"
 # Load of all TCP features
-path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2-test_2018/*_TCP.*_Align_features'
+path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2-test_2018/*_TCP*_Align_features'
 all_rec = iglob(path, recursive=True)     
 dataframes = (pd.read_csv(f) for f in all_rec)
 TCP_features = pd.concat(dataframes, ignore_index=True)
@@ -73,7 +73,7 @@ TCP_features["beam_type"] = "PROTON"
 TCP_features["beam_state"] = "I"
 
 # Load of all TCSG features
-path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2-test_2018/*_TCSG.*_Align_features'
+path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2-test_2018/*_TCSG*_Align_features'
 all_rec = iglob(path, recursive=True)     
 dataframes = (pd.read_csv(f) for f in all_rec)
 TCSG_features = pd.concat(dataframes, ignore_index=True)
@@ -85,7 +85,7 @@ TCSG_features["beam_type"] = "PROTON"
 TCSG_features["beam_state"] = "I"
 
 # Load of all TCLA features
-path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2-test_2018/*_TCLA.*_Align_features'
+path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2-test_2018/*_TCLA*_Align_features'
 all_rec = iglob(path, recursive=True)     
 dataframes = (pd.read_csv(f) for f in all_rec)
 TCLA_features = pd.concat(dataframes, ignore_index=True)
@@ -117,7 +117,7 @@ II_test_2018_dataframe.to_csv("II_test_2018_dataframe.csv")
 
 # 3) "2017_MD"
 # Load of all TCP features
-path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2017_MD/*_TCP.*_Align_features'
+path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2017_MD/*_TCP*_Align_features'
 all_rec = iglob(path, recursive=True)     
 dataframes = (pd.read_csv(f) for f in all_rec)
 TCP_features = pd.concat(dataframes, ignore_index=True)
@@ -129,7 +129,7 @@ TCP_features["beam_type"] = "PROTON"
 TCP_features["beam_state"] = "I"
 
 # Load of all TCSG features
-path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2017_MD/*_TCSG.*_Align_features'
+path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2017_MD/*_TCSG*_Align_features'
 all_rec = iglob(path, recursive=True)     
 dataframes = (pd.read_csv(f) for f in all_rec)
 TCSG_features = pd.concat(dataframes, ignore_index=True)
@@ -142,7 +142,7 @@ TCSG_features["beam_type"] = "PROTON"
 TCSG_features["beam_state"] = "I"
 
 # Load of all TCLA features
-path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2017_MD/*_TCLA.*_Align_features'
+path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2017_MD/*_TCLA*_Align_features'
 all_rec = iglob(path, recursive=True)     
 dataframes = (pd.read_csv(f) for f in all_rec)
 TCLA_features = pd.concat(dataframes, ignore_index=True)
@@ -174,7 +174,7 @@ MD_2017_dataframe.to_csv("2017_MD_dataframe.csv")
 
 # 4) "2018_MD3"
 # Load of all TCP features
-path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2018_MD3/*_TCP.*_Align_features'
+path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2018_MD3/*_TCP*_Align_features'
 all_rec = iglob(path, recursive=True)     
 dataframes = (pd.read_csv(f) for f in all_rec)
 TCP_features = pd.concat(dataframes, ignore_index=True)
@@ -186,7 +186,7 @@ TCP_features["beam_type"] = "PROTON"
 TCP_features["beam_state"] = "I"
 
 # Load of all TCSG features
-path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2018_MD3/*_TCSG.*_Align_features'
+path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2018_MD3/*_TCSG*_Align_features'
 all_rec = iglob(path, recursive=True)     
 dataframes = (pd.read_csv(f) for f in all_rec)
 TCSG_features = pd.concat(dataframes, ignore_index=True)
@@ -199,7 +199,7 @@ TCSG_features["beam_type"] = "PROTON"
 TCSG_features["beam_state"] = "I"
 
 # Load of all TCLA features
-path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2018_MD3/*_TCLA.*_Align_features'
+path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2018_MD3/*_TCLA*_Align_features'
 all_rec = iglob(path, recursive=True)     
 dataframes = (pd.read_csv(f) for f in all_rec)
 TCLA_features = pd.concat(dataframes, ignore_index=True)
@@ -257,7 +257,7 @@ MD3_2018_dataframe.to_csv("2018_MD3_dataframe.csv")
 
 # 5) "2018_MD4"
 # Load of all TCP features
-path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2018_MD4/*_TCP.*_Align_features'
+path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2018_MD4/*_TCP*_Align_features'
 all_rec = iglob(path, recursive=True)     
 dataframes = (pd.read_csv(f) for f in all_rec)
 TCP_features = pd.concat(dataframes, ignore_index=True)
@@ -269,7 +269,7 @@ TCP_features["beam_type"] = "PROTON"
 TCP_features["beam_state"] = "I"
 
 # Load of all TCSG features
-path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2018_MD4/*_TCSG.*_Align_features'
+path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2018_MD4/*_TCSG*_Align_features'
 all_rec = iglob(path, recursive=True)     
 dataframes = (pd.read_csv(f) for f in all_rec)
 TCSG_features = pd.concat(dataframes, ignore_index=True)
@@ -301,7 +301,7 @@ MD4_2018_dataframe.to_csv("2018_MD4_dataframe.csv")
 
 # 6) "3-inj_2018"
 # Load of all TCP features
-path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/3-inj_2018/*_TCP.*_Align_features'
+path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/3-inj_2018/*_TCP*_Align_features'
 all_rec = iglob(path, recursive=True)     
 dataframes = (pd.read_csv(f) for f in all_rec)
 TCP_features = pd.concat(dataframes, ignore_index=True)
@@ -313,7 +313,7 @@ TCP_features["beam_type"] = "PROTON"
 TCP_features["beam_state"] = "I"
 
 # Load of all TCSG features
-path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/3-inj_2018/*_TCSG.*_Align_features'
+path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/3-inj_2018/*_TCSG*_Align_features'
 all_rec = iglob(path, recursive=True)     
 dataframes = (pd.read_csv(f) for f in all_rec)
 TCSG_features = pd.concat(dataframes, ignore_index=True)
@@ -326,7 +326,7 @@ TCSG_features["beam_type"] = "PROTON"
 TCSG_features["beam_state"] = "I"
 
 # Load of all TCLA features
-path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/3-inj_2018/*_TCLA.*_Align_features'
+path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/3-inj_2018/*_TCLA*_Align_features'
 all_rec = iglob(path, recursive=True)     
 dataframes = (pd.read_csv(f) for f in all_rec)
 TCLA_features = pd.concat(dataframes, ignore_index=True)
@@ -383,7 +383,7 @@ III_inj_2018_dataframe.to_csv("III_inj_2018_dataframe.csv")
 
 # 7) "4-flat_2018"
 # Load of all TCP features
-path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/4-flat_2018/*_TCP.*_Align_features'
+path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/4-flat_2018/*_TCP*_Align_features'
 all_rec = iglob(path, recursive=True)     
 dataframes = (pd.read_csv(f) for f in all_rec)
 TCP_features = pd.concat(dataframes, ignore_index=True)
@@ -395,7 +395,7 @@ TCP_features["beam_type"] = "PROTON"
 TCP_features["beam_state"] = "FT"
 
 # Load of all TCSG features
-path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/4-flat_2018/*_TCSG.*_Align_features'
+path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/4-flat_2018/*_TCSG*_Align_features'
 all_rec = iglob(path, recursive=True)     
 dataframes = (pd.read_csv(f) for f in all_rec)
 TCSG_features = pd.concat(dataframes, ignore_index=True)
@@ -408,7 +408,7 @@ TCSG_features["beam_type"] = "PROTON"
 TCSG_features["beam_state"] = "FT"
 
 # Load of all TCLA features
-path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/4-flat_2018/*_TCLA.*_Align_features'
+path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/4-flat_2018/*_TCLA*_Align_features'
 all_rec = iglob(path, recursive=True)     
 dataframes = (pd.read_csv(f) for f in all_rec)
 TCLA_features = pd.concat(dataframes, ignore_index=True)
@@ -440,7 +440,7 @@ IV_flat_2018_dataframe.to_csv("IV_flat_2018_dataframe.csv")
 
 # 8) 2018_IONS_Collisions
 # Load of all TCP features
-path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2018_IONS_Collisions/*_TCP.*_Align_features'
+path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2018_IONS_Collisions/*_TCP*_Align_features'
 all_rec = iglob(path, recursive=True)     
 dataframes = (pd.read_csv(f) for f in all_rec)
 TCP_features = pd.concat(dataframes, ignore_index=True)
@@ -452,7 +452,7 @@ TCP_features["beam_type"] = "ION"
 TCP_features["beam_state"] = " "
 
 # Load of all TCSG features
-path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2018_IONS_Collisions/*_TCSG.*_Align_features'
+path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2018_IONS_Collisions/*_TCSG*_Align_features'
 all_rec = iglob(path, recursive=True)     
 dataframes = (pd.read_csv(f) for f in all_rec)
 TCSG_features = pd.concat(dataframes, ignore_index=True)
@@ -464,7 +464,7 @@ TCSG_features["beam_type"] = "ION"
 TCSG_features["beam_state"] = " "
 
 # Load of all TCLA features
-path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2018_IONS_Collisions/*_TCLA.*_Align_features'
+path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2018_IONS_Collisions/*_TCLA*_Align_features'
 all_rec = iglob(path, recursive=True)     
 dataframes = (pd.read_csv(f) for f in all_rec)
 TCLA_features = pd.concat(dataframes, ignore_index=True)
