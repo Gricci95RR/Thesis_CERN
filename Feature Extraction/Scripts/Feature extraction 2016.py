@@ -16,10 +16,10 @@ def power_law(x, a, b, c):
     return a * np.power(x, b) + c
 
 # import of i_col_info 2016
-i_col_info = pd.read_csv(r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/col_info/2016/i_col_info.csv')
+i_col_info = pd.read_csv(r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/col_info/2016/f_col_info.csv')
 # names of the files to import
 filenames = iglob(
-    '/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/GabyPhD2019-Training_data/data/no_spike/2016-04-02_i/*.csv')
+    '/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/GabyPhD2019-Training_data/data/spike/2016-07-31_f/*.csv')
 
 pos_sigma = []
 spike_height = []
@@ -132,20 +132,20 @@ for j in range(0,len(exp)):
     exp_b.append(exp[j][1])   
     exp_c.append(exp[j][2])
  
-data = {'Jaw': jaw,
-        'Spike height': spike_height,
-        'Position in sigma': pos_sigma,
+data = {'jaw': jaw,
+        'height': spike_height,
+        'position': pos_sigma,
         'Maximum value': max_value,
-        'Exp_a': exp_a,
-        'Exp_b': exp_b,
-        'Exp_c': exp_c,
-        'Spike': spike,
-        'Collimator type': collimator_type,
-        'Beam Type': beam_type,
-        'Beam State': beam_state
+        'decay_a': exp_a,
+        'decay_b': exp_b,
+        'decay_c': exp_c,
+        'spike': spike,
+        'collimator_type': collimator_type,
+        'beam_type': beam_type,
+        'beam_state': beam_state
         }
 
 df2 = pd.DataFrame (data) 
 print(df2)
 
-df2.to_csv('2016-04-02_i.csv')
+df2.to_csv('2016-07-31_f.csv')

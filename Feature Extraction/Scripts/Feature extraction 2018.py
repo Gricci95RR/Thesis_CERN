@@ -27,6 +27,14 @@ filenames = iglob('/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_
 pos_sigma1 = []
 pos_sigma2 = []
 spike_height = []
+max_value = []
+exp = []
+
+beam_state = []
+beam_type = []
+spike = []
+jaw = []
+collimator_type = []
 for i in filenames:
     df = pd.read_csv(i, sep="=", header = None, nrows=9)
     df2 = pd.read_csv(i, skiprows=10, header = None)
@@ -45,9 +53,10 @@ for i in filenames:
             sigma_x = i_col_info.iat[j,3]
             sigma_y = i_col_info.iat[j,4]
             beam_size = math.sqrt((math.pow(sigma_x,2) * math.pow(math.cos(theta),2)) + (math.pow(sigma_y,2) * math.pow(math.sin(theta),2)))
+            
             pos_sigma_a = np.abs(LU) / beam_size
-            pos_sigma_b = np.abs(RU) / beam_size
             pos_sigma1.append(pos_sigma_a)
+            pos_sigma_b = np.abs(RU) / beam_size
             pos_sigma2.append(pos_sigma_b)
             
             # spike_height
@@ -61,6 +70,7 @@ for i in filenames:
             avg = df_steady.sum() / len(df_steady)
             s_h = max_val - avg
             spike_height.append(s_h)
+            max_value.append(max_val)
             
             # exp fit
             y = df4.iloc[max_index:,0] # decay
@@ -72,13 +82,20 @@ for i in filenames:
             
             pass
             
-        
+            
             print(i)
             print("Position sigma 1:", pos_sigma_a)
             print("Position sigma 2:", pos_sigma_b)
             print("Maximum value:", max_val)
             print("Spike_height:", s_h)
             print("Exp_a, Exp_b, Exp_c:", popt)
-            
+
+exp_a = []
+exp_b = []
+exp_c = []
+for j in range(0,len(exp)):
+    exp_a.append(exp[j][0])
+    exp_b.append(exp[j][1])   
+    exp_c.append(exp[j][2])           
 
 
