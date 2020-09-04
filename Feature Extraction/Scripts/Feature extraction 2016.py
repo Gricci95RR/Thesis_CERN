@@ -16,10 +16,10 @@ def power_law(x, a, b, c):
     return a * np.power(x, b) + c
 
 # import of i_col_info 2016
-i_col_info = pd.read_csv(r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/col_info/2016/f_col_info.csv')
+i_col_info = pd.read_csv(r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/col_info/2016/i_col_info.csv')
 # names of the files to import
 filenames = iglob(
-    '/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/GabyPhD2019-Training_data/data/spike/2016-07-31_f/*.csv')
+    '/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/GabyPhD2019-Training_data/data/no_spike/2016-04-02_i/*.csv')
 
 pos_sigma = []
 spike_height = []
@@ -85,24 +85,30 @@ for i in filenames:
             
             # Beam state (Inj or FT)
             if i[103:105] == '_i' or i[106:108] == '_i':
-                beam_state.append('I')
+                beam_state_ = 'I'
+                beam_state.append(beam_state_)
             elif i[103:105] == '_f' or i[106:108] == '_f':
-                beam_state.append('FT')
+                beam_state_ = 'FT'
+                beam_state.append(beam_state_)
             
             # Beam type
             beam_type.append('PROTON')
             
             # Spike
             if i[87:95] == 'no_spike':
-                spike.append(0)
+                spike_=0
+                spike.append(spike_ )
             elif i[87:92] == 'spike': #verify
-                spike.append(1)
+                spike_ = 1
+                spike.append(spike_ )
              
             # Jaw (0 = Left, 1 = Right)
             if i[109:114] == 'Right' or i[106:111] == 'Right':
-                jaw.append(1)
+                jaw_ = 1
+                jaw.append(jaw_)
             elif i[109:113] == 'Left' or i[106:110] == 'Left':
-                jaw.append(0)
+                jaw_ = 0
+                jaw.append(jaw_)
             
             # collimator type
             collimator_name = df.iloc[0][2]
@@ -115,14 +121,17 @@ for i in filenames:
                 
             
                    
-            '''    
-            print(i)
+            
+            print('Path:',i[56:])
+            print("Jaw:", jaw_)
             print("Position sigma:" ,pos_sigma_a)
             print("Maximum value:", max_val)
             print("Spike height:", spike_height_a)
             print("Exp_a, Exp_b, Exp_c:", popt)
-            print("Pow_a, Pow_b, Pow_c:", popt2)
-            '''
+            print("Beam State:", beam_state_)
+            print("Spike:", spike_ )
+           # print("Pow_a, Pow_b, Pow_c:", popt2)
+            
 
 exp_a = []
 exp_b = []
@@ -132,7 +141,8 @@ for j in range(0,len(exp)):
     exp_b.append(exp[j][1])   
     exp_c.append(exp[j][2])
  
-data = {'jaw': jaw,
+data = {
+        'jaw': jaw,
         'height': spike_height,
         'position': pos_sigma,
         'Maximum value': max_value,
@@ -146,6 +156,6 @@ data = {'jaw': jaw,
         }
 
 df2 = pd.DataFrame (data) 
-print(df2)
+#print(df2)
 
-df2.to_csv('2016-07-31_f.csv')
+#df2.to_csv('2016-07-31_f.csv')
