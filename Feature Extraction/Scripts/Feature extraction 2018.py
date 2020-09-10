@@ -22,7 +22,7 @@ def power_law(x, a, b, c):
 # import of i_col_info
 i_col_info = pd.read_csv(r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/col_info/2018/i_col_info.csv')
 # names of the files to import
-filenames = iglob('/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2-test_2018/*_Align')
+filenames = iglob('/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/3-inj_2018/*_Align')
 
 pos_sigma1 = []
 pos_sigma2 = []
@@ -55,10 +55,17 @@ for i in filenames:
             sigma_y = i_col_info.iat[j,4]
             beam_size = math.sqrt((math.pow(sigma_x,2) * math.pow(math.cos(theta),2)) + (math.pow(sigma_y,2) * math.pow(math.sin(theta),2)))
             
-            pos_sigma_a = np.abs(LU) / beam_size
-            pos_sigma1.append(pos_sigma_a)
             pos_sigma_b = np.abs(RU) / beam_size
             pos_sigma2.append(pos_sigma_b)
+            pos_sigma_a = np.abs(LU) / beam_size
+            pos_sigma1.append(pos_sigma_a)
+            
+            if df3.iat[3,1] == 0: #if (left_step_size == 0) jaw=1
+                jaw_=1
+                jaw.append(jaw_)
+            elif df3.iat[4,1] == 0:
+                jaw_=0
+                jaw.append(jaw_)
             
             # spike_height
             #Search data for max value
@@ -88,12 +95,16 @@ for i in filenames:
                     collimator_type.append(name2[:kk])
             
             print(i)
-            
-            print("Position sigma 1:", pos_sigma_a)
-            print("Position sigma 2:", pos_sigma_b)
+            #if df3.iat[3,1] == 0:
+            print("Position sigma 1:", pos_sigma_b)
+            #elif df3.iat[4,1] == 0:
+            print("Position sigma 2:", pos_sigma_a)
+                
             print("Maximum value:", max_val)
             print("Spike_height:", s_h)
             print("Exp_a, Exp_b, Exp_c:", popt)
+            print('Jaw:',jaw_)
+            
 
 
 exp_a = []

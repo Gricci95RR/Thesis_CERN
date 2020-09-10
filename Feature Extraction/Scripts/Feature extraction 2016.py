@@ -16,10 +16,10 @@ def power_law(x, a, b, c):
     return a * np.power(x, b) + c
 
 # import of i_col_info 2016
-i_col_info = pd.read_csv(r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/col_info/2016/i_col_info.csv')
+i_col_info = pd.read_csv(r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/col_info/2016/f_col_info.csv')
 # names of the files to import
 filenames = iglob(
-    '/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/GabyPhD2019-Training_data/data/no_spike/2016-04-02_i/*.csv')
+    '/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/GabyPhD2019-Training_data/data/spike/2016-04-19_f/*.csv')
 
 pos_sigma = []
 spike_height = []
@@ -48,6 +48,7 @@ for i in filenames:
             if i[109:114] == 'Right' or i[106:111] == 'Right':
                 pos_sigma_a = (centre - pos_mm) / beam_size
                 pos_sigma.append(pos_sigma_a)
+                
             elif i[109:113] == 'Left' or i[106:110] == 'Left':
                 pos_sigma_a = (pos_mm - centre) / beam_size
                 pos_sigma.append(pos_sigma_a)
@@ -121,16 +122,25 @@ for i in filenames:
                 
             
                    
-            
-            print('Path:',i[56:])
-            print("Jaw:", jaw_)
-            print("Position sigma:" ,pos_sigma_a)
-            print("Maximum value:", max_val)
-            print("Spike height:", spike_height_a)
-            print("Exp_a, Exp_b, Exp_c:", popt)
-            print("Beam State:", beam_state_)
-            print("Spike:", spike_ )
-           # print("Pow_a, Pow_b, Pow_c:", popt2)
+            if pos_sigma_a<0:
+                '''
+                print(i_col_info.iat[j,0],name2)
+                print('centre:',centre,
+            'sigma_x',sigma_x,
+            'sigma_y',sigma_y,
+            'theta:',theta,
+            'pos_mm:',pos_mm )
+                '''
+                print('Path:',i[56:])
+                print("Jaw:", jaw_)
+                print("Position sigma:" ,pos_sigma_a)
+                print("Maximum value:", max_val)
+                print("Spike height:", spike_height_a)
+                print("Exp_a, Exp_b, Exp_c:", popt)
+                print("Beam State:", beam_state_)
+                print("Spike:", spike_ )
+               # print("Pow_a, Pow_b, Pow_c:", popt2)
+
             
 
 exp_a = []
