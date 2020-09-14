@@ -16,10 +16,10 @@ def power_law(x, a, b, c):
     return a * np.power(x, b) + c
 
 # import of i_col_info 2016
-i_col_info = pd.read_csv(r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/col_info/2016/f_col_info.csv')
+i_col_info = pd.read_csv(r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/col_info/2017/f_col_info.csv')
 # names of the files to import
 filenames = iglob(
-    '/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/GabyPhD2019-Training_data/data/spike/2016-07-31_f/*.csv')
+    '/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/2017_data/no_spike/2017-09-17_f/*.csv')
 
 pos_sigma = []
 spike_height = []
@@ -45,13 +45,13 @@ for i in filenames:
             theta =  i_col_info.iat[j,1]
             pos_mm = df1.iat[len(df1)-1,1] 
             beam_size = math.sqrt((math.pow(sigma_x,2) * math.pow(math.cos(theta),2)) + (math.pow(sigma_y,2) * math.pow(math.sin(theta),2)))
-            if i[109:114] == 'Right' or i[106:111] == 'Right':
+            if i[85:90] == 'Right' or i[88:93] == 'Right':
                 pos_sigma_a = (centre - pos_mm) / beam_size
-                pos_sigma.append(pos_sigma_a)
+                jaw_ = 1
                 
-            elif i[109:113] == 'Left' or i[106:110] == 'Left':
+            elif i[85:89] == 'Left' or i[88:92] == 'Left':
                 pos_sigma_a = (pos_mm - centre) / beam_size
-                pos_sigma.append(pos_sigma_a)
+                jaw_ = 0
             
             # Spike_height
             df_start = df1[df1[1] == pos_mm].index[0] 
@@ -64,85 +64,71 @@ for i in filenames:
             df_prev = df1.iloc[:df_start]
             avg = df_prev[df_prev.columns[2]].sum() / len(df_prev)
             spike_height_a = max_val - avg
-            spike_height.append(spike_height_a)
-            max_value.append(max_val)
             
+            # Spike
+            if i[66:74] == 'no_spike':
+                    spike_=0
+                    
+            elif i[66:71] == 'spike': #verify
+                    spike_ = 1
+                    
             # Exp fit
             end2 = max_index + 600 
             y = df1.iloc[max_index:end2,2] #time window of 6 seconds starting from the maximum value index
             x = np.arange(start=0, stop=len(y), step=1)
-            
             try:
                 popt, pcov = curve_fit(exponential, x, y)
                 exp.append(popt)
-            except RuntimeError as e:
-                pass
-            
-            # Power fit
-            try:
-                popt2, pcov = curve_fit(power_law, x, y)
-            except RuntimeError as e:
-                pass
-            
-            # Beam state (Inj or FT)
-            if i[103:105] == '_i' or i[106:108] == '_i':
-                beam_state_ = 'I'
-                beam_state.append(beam_state_)
-            elif i[103:105] == '_f' or i[106:108] == '_f':
-                beam_state_ = 'FT'
-                beam_state.append(beam_state_)
-            
-            # Beam type
-            beam_type.append('PROTON')
-            
-            # Spike
-            if i[87:95] == 'no_spike':
-                spike_=0
-                spike.append(spike_ )
-            elif i[87:92] == 'spike': #verify
-                spike_ = 1
-                spike.append(spike_ )
-             
-            # Jaw (0 = Left, 1 = Right)
-            if i[109:114] == 'Right' or i[106:111] == 'Right':
-                jaw_ = 1
-                jaw.append(jaw_)
-            elif i[109:113] == 'Left' or i[106:110] == 'Left':
-                jaw_ = 0
-                jaw.append(jaw_)
-            
-            # collimator type
-            collimator_name = df.iloc[0][2]
-            collimator_name = collimator_name[17:]
-            
-            for kk in range(0, len(collimator_name)):
-                if collimator_name[kk] == "." and kk<6:
-                    collimator_type.append(collimator_name[:kk])
-                    
+                # Beam state (Inj or FT)
+                if i[82:84] == '_i' or i[85:87] == '_i':
+                    beam_state_ = 'I'
+                    beam_state.append(beam_state_)
+                elif i[82:84] == '_f' or i[85:87] == '_f':
+                    beam_state_ = 'FT'
+                    beam_state.append(beam_state_)
                 
+                # collimator type
+                collimator_name = df.iloc[0][2]
+                collimator_name = collimator_name[17:]
+                for kk in range(0, len(collimator_name)):
+                    if collimator_name[kk] == "." and kk<6:
+                        collimator_type.append(collimator_name[:kk])
+                
+                # Beam type
+                beam_type.append('PROTON')
+                
+                jaw.append(jaw_)        
+                spike_height.append(spike_height_a)
+                max_value.append(max_val)
+                pos_sigma.append(pos_sigma_a)
+                spike.append(spike_ )
+                
+                
+            except RuntimeError as e:
+                pass
+            
+            
                 
             
                    
-            if pos_sigma_a<0:
-                '''
-                print(i_col_info.iat[j,0],name2)
-                print('centre:',centre,
+            
+                
+            print(i_col_info.iat[j,0],name2)
+            print('centre:',centre,
             'sigma_x',sigma_x,
             'sigma_y',sigma_y,
             'theta:',theta,
             'pos_mm:',pos_mm )
-                
-                
-                print('Path:',i[56:])
-                print("Jaw:", jaw_)
-                print("Position sigma:" ,pos_sigma_a)
-                print("Maximum value:", max_val)
-                print("Spike height:", spike_height_a)
-                print("Exp_a, Exp_b, Exp_c:", popt)
-                print("Beam State:", beam_state_)
-                print("Spike:", spike_ )
-               # print("Pow_a, Pow_b, Pow_c:", popt2)
-                '''
+            print('Path:',i[56:])
+            print("Jaw:", jaw_)
+            print("Position sigma:" ,pos_sigma_a)
+            print("Maximum value:", max_val)
+            print("Spike height:", spike_height_a)
+            print("Exp_a, Exp_b, Exp_c:", popt)
+            print("Beam State:", beam_state_)
+            print("Spike:", spike_ )   
+            # print("Pow_a, Pow_b, Pow_c:", popt2)
+            
 
             
 
@@ -168,7 +154,17 @@ data = {
         'beam_state': beam_state
         }
 
+print(len(jaw))
+print(len(spike_height))
+print(len(max_value))
+print(len(exp_a))
+print(len(exp_b))
+print(len(exp_c))
+print(len(spike))
+print(len(collimator_type))
+print(len(beam_type))
+print(len(beam_state))
 df2 = pd.DataFrame (data) 
-#print(df2)
+print(df2)
 
-#df2.to_csv('2016-07-31_f.csv')
+df2.to_csv('2017-09-17_f.csv')
