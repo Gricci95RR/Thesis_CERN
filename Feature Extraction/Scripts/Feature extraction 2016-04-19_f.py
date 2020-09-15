@@ -17,8 +17,12 @@ def power_law(x, a, b, c):
 i_col_info = pd.read_csv(r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/col_info/2016/f_col_info.csv')
 # names of the files to import
 filenames = iglob(
-    '/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/*.csv')
+    '/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/GabyPhD2019-Training_data/data/spike/2016-04-19_f/*.csv')
 
+collimator_setup_b1= pd.read_csv('/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/GabyPhD2019-Training_data/data/Collimator setup_2016-04-19_10/Collimator_Setup_Sheet_physics_6500_Nominal_2016-04-19_10-52-21_B1_ONGOING.tsv', usecols=range(1,9), skiprows=3,sep="\t")
+collimator_setup_b2= pd.read_csv('/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/GabyPhD2019-Training_data/data/Collimator setup_2016-04-19_10/Collimator_Setup_Sheet_physics_6500_Nominal_2016-04-19_10-52-21_B2_ONGOING.tsv', usecols=range(1,9), skiprows=3,sep="\t")
+collimator_setup_b1=collimator_setup_b1.dropna()
+collimator_setup_b2=collimator_setup_b2.dropna()
 
 pos_sigma = []
 spike_height = []
@@ -43,13 +47,24 @@ for i in filenames:
             # collimator type
             collimator_name = df.iloc[0][2]
             collimator_name = collimator_name[17:]
+            
             for kk in range(0, len(collimator_name)):
                 if collimator_name[kk] == "." and kk<6:
                     collimator_type.append(collimator_name[:kk])
+                    if collimator_name[:kk]=='TCL':
+                        # pos_sigma
+                        for jj in range(0,len(collimator_setup_b1)):
+                            if name2==collimator_setup_b1.iat[jj,1]:
+                                centre=collimator_setup_b1.iat[jj,6]
+                                break
+                        for jj in range(0,len(collimator_setup_b2)):
+                            if name2==collimator_setup_b2.iat[jj,1]:
+                                centre=collimator_setup_b2.iat[jj,6]
+                                break   
+                    else:
+                        centre = i_col_info.iat[j,2]
                     
-            
-            # pos_sigma
-            centre = i_col_info.iat[j,2]
+   
             sigma_x = i_col_info.iat[j,3]
             sigma_y = i_col_info.iat[j,4]
             theta =  i_col_info.iat[j,1]
@@ -168,6 +183,6 @@ data = {
         }
 
 df2 = pd.DataFrame (data) 
-#print(df2)
+print(df2)
 
-#df2.to_csv('2016-07-31_f.csv')
+df2.to_csv('2016-04-19_f.csv')

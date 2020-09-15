@@ -30,7 +30,7 @@ def stampa(i,pos_sigma,max_val,s_h,popt,jaw_):
 # import of i_col_info
 i_col_info = pd.read_csv(r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/col_info/2018/i_col_info.csv')
 # names of the files to import
-filenames = iglob('/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2-test_2018/*_Align')
+filenames = iglob('/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/1-test_2018/*_Align')
 
 pos_sigma = []
 spike_height = []
@@ -52,16 +52,16 @@ for i in filenames:
     theta = df3.iat[2,1]
     LU = df3.iat[5,1] 
     RU = df3.iat[7,1] 
-    name = df3.iat[9,0]
-    name2 = name[17:]
+    try:
+        name = df3.iat[9,0]
+        name2 = name[17:]
+    except:
+        # only for 1-test-2018
+        name1 = i[89:]
+        for kk in range(0, len(name1)):
+                    if name1[kk] == "_":
+                        name2 = name1[:kk]
     
-    # only for 1-test-2018
-    '''
-    name1 = i[89:]
-    for kk in range(0, len(name1)):
-                if name1[kk] == "_":
-                    name2 = name1[:kk]
-    '''
     
     for j in i_col_info.index:
         if i_col_info.iat[j,0] == name2:
@@ -101,7 +101,8 @@ for i in filenames:
                     for kk in range(0, len(name2)):
                         if name2[kk] == "." and kk<6:
                             collimator_type.append(name2[:kk])
-                    stampa(i,pos_sigma_,max_val,s_h,popt,jaw_)
+                    if(i[89:]=='TCP.D6L7.B1_Align'):
+                        stampa(i,pos_sigma_,max_val,s_h,popt,jaw_)        
                 elif df3.iat[4,1] == 0:
                     jaw_=0
                     jaw.append(jaw_)
@@ -116,7 +117,8 @@ for i in filenames:
                     for kk in range(0, len(name2)):
                         if name2[kk] == "." and kk<6:
                             collimator_type.append(name2[:kk])
-                    stampa(i,pos_sigma_,max_val,s_h,popt,jaw_)
+                    if(i[89:]=='TCP.D6L7.B1_Align'):
+                        stampa(i,pos_sigma_,max_val,s_h,popt,jaw_) 
                 elif df3.iat[3,1] != 0 and df3.iat[4,1] !=0:
                     jaw_=1
                     jaw.append(jaw_)
@@ -132,7 +134,8 @@ for i in filenames:
                     for kk in range(0, len(name2)):
                         if name2[kk] == "." and kk<6:
                             collimator_type.append(name2[:kk])
-                    stampa(i,pos_sigma_,max_val,s_h,popt,jaw_)        
+                    if(i[89:]=='TCP.D6L7.B1_Align'):
+                        stampa(i,pos_sigma_,max_val,s_h,popt,jaw_) 
                     
                     pos_sigma_ = np.abs(LU) / beam_size #left
                     pos_sigma.append(pos_sigma_)
@@ -145,16 +148,13 @@ for i in filenames:
                     for kk in range(0, len(name2)):
                         if name2[kk] == "." and kk<6:
                             collimator_type.append(name2[:kk])
-                    stampa(i,pos_sigma_,max_val,s_h,popt,jaw_)
+                    if(i[89:]=='TCP.D6L7.B1_Align'):
+                        stampa(i,pos_sigma_,max_val,s_h,popt,jaw_) 
             except RuntimeError as e:
                 pass
             
             pass
         
-            
-            
-            
-         
 
 exp_a = []
 exp_b = []
