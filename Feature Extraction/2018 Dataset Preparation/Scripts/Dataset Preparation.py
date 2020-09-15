@@ -481,6 +481,6 @@ ION_dataframe = pd.concat(frames)
 ION_dataframe.to_csv("ION_dataframe.csv")
 
 # Total dataset
-frames = [I_test_2018_dataframe, II_test_2018_dataframe, MD_2017_dataframe, MD3_2018_dataframe, MD4_2018_dataframe, III_inj_2018_dataframe, IV_flat_2018_dataframe, ION_dataframe]
+frames = [I_test_2018_dataframe, II_test_2018_dataframe, MD3_2018_dataframe, MD4_2018_dataframe, III_inj_2018_dataframe, IV_flat_2018_dataframe]
 total_dataframe = pd.concat(frames)
-total_dataframe.to_csv("Total_dataset.csv")
+total_dataframe.to_csv("Auto_2018_dataset_NO_TCL.csv")

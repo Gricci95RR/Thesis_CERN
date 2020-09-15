@@ -30,7 +30,7 @@ def stampa(i,pos_sigma,max_val,s_h,popt,jaw_):
 # import of i_col_info
 i_col_info = pd.read_csv(r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/col_info/2018/i_col_info.csv')
 # names of the files to import
-filenames = iglob('/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/1-test_2018/*_Align')
+filenames = iglob('/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/2018_MD3/*_Align')
 
 pos_sigma = []
 spike_height = []
@@ -42,7 +42,7 @@ beam_state = []
 beam_type = []
 spike = []
 jaw = []
-
+beam_state_='I'
 for i in filenames:
     df = pd.read_csv(i, sep="=", header = None, nrows=9)
     df2 = pd.read_csv(i, skiprows=10, header = None)
@@ -93,7 +93,7 @@ for i in filenames:
                     pos_sigma_ = np.abs(RU) / beam_size 
                     pos_sigma.append(pos_sigma_)
                     beam_type.append('PROTON')
-                    beam_state.append('I')
+                    beam_state.append(beam_state_)
                     spike_height.append(s_h)
                     max_value.append(max_val)
                     exp.append(popt)
@@ -109,7 +109,7 @@ for i in filenames:
                     pos_sigma_ = np.abs(LU) / beam_size #left
                     pos_sigma.append(pos_sigma_)
                     beam_type.append('PROTON')
-                    beam_state.append('I')
+                    beam_state.append(beam_state_)
                     spike_height.append(s_h)
                     max_value.append(max_val)
                     exp.append(popt)
@@ -129,7 +129,7 @@ for i in filenames:
                     spike_height.append(s_h)
                     max_value.append(max_val)
                     beam_type.append('PROTON')
-                    beam_state.append('I')
+                    beam_state.append(beam_state_)
                     exp.append(popt)
                     for kk in range(0, len(name2)):
                         if name2[kk] == "." and kk<6:
@@ -140,7 +140,7 @@ for i in filenames:
                     pos_sigma_ = np.abs(LU) / beam_size #left
                     pos_sigma.append(pos_sigma_)
                     beam_type.append('PROTON')
-                    beam_state.append('I')
+                    beam_state.append(beam_state_)
                     spike_height.append(s_h)
                     max_value.append(max_val)
                     exp.append(popt)
@@ -190,6 +190,6 @@ print(len(beam_type))
 print(len(beam_state))
 
 df2 = pd.DataFrame (data) 
-#print(df2)
+print(df2)
 
-#df2.to_csv('2016-07-31_f.csv')
+df2.to_csv('2018_MD3.csv')

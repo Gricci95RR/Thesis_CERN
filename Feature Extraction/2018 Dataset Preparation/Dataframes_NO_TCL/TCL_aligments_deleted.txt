@@ -1,0 +1,5 @@
+Data/Auto_data/1-test_2018/1522829837_TCL.6L1.B2_Align
+Data/Auto_data/1-test_2018/1522829841_TCL.5R1.B1_Align
+Data/Auto_data/1-test_2018/1522829842_TCL.6R1.B1_Align
+Data/Auto_data/2018_MD3/1536862684_TCL.4L1.B2_Align
+Data/Auto_data/2018_MD3/1536862685_TCL.6L1.B2_Align
