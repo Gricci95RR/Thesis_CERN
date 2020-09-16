@@ -19,7 +19,7 @@ def power_law(x, a, b, c):
 i_col_info = pd.read_csv(r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/col_info/2017/f_col_info.csv')
 # names of the files to import
 filenames = iglob(
-    '/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/2017_data/no_spike/2017-09-17_f/*.csv')
+    '/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/2017_data/no_spike/2017-05-13_f/*.csv')
 
 pos_sigma = []
 spike_height = []
@@ -32,12 +32,20 @@ jaw = []
 collimator_type = []
 for i in filenames:
     df = pd.read_csv(i, header = None, nrows=1) # string
-    df1 = pd.read_csv(i, header = None, skiprows=1) # values
-    df1[2] = df1[2] * 1e06
+    df1 = pd.read_csv(i,header = None, skiprows=1) # values
+    df11 = pd.read_csv(i) # values BLM for plots
+    df1[2] = df1[2] * 1e06 # BL
     name = df.iat[0,2]
     name2 = name[17:]
+    
     for j in i_col_info.index:
         if i_col_info.iat[j,0] == name2:
+            # plots
+            a4_dims = (12,9)
+            sns.set_style("darkgrid")
+            fig, (ax1, ax2) = plt.subplots(nrows=2, sharey=False,figsize=a4_dims)
+            sns.lineplot(x="Timestamp", y='position', ax=ax1,data=df11)
+            sns.lineplot(x="Timestamp", y=name, ax=ax2,data=df11)
             # pos_sigma
             centre = i_col_info.iat[j,2]
             sigma_x = i_col_info.iat[j,3]
@@ -167,4 +175,4 @@ print(len(beam_state))
 df2 = pd.DataFrame (data) 
 print(df2)
 
-df2.to_csv('2017-09-17_f.csv')
+#df2.to_csv('2017-09-17_f.csv')
