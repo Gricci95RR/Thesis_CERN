@@ -6,15 +6,19 @@ import numpy as np
 # Load of all TCP features from "1-test_2018"
 path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/1-test_2018/*_TCP*_Align_features'
 all_rec = iglob(path, recursive=True)     
-dataframes = (pd.read_csv(f) for f in all_rec)
-TCP_features = pd.concat(dataframes, ignore_index=True)
-# Add a column to the dataframe that represents the collimator type (TCP, TCSG, TCLA, TCT, TCDQ)
-TCP_features["collimator_type"] = "TCP"
-# Add a column to the dataframe that represents the beam type type (ION or PROTON)
-TCP_features["beam_type"] = "PROTON"
-# Add a column to the dataframe that represents the beam state (Injection (I) or Flat top (FT))
-TCP_features["beam_state"] = "I"
-
+for f in all_rec:
+    TCP_features = pd.read_csv(f)
+    #TCP_features = pd.concat(dataframes, ignore_index=True)
+    # Add a column to the dataframe that represents the collimator type (TCP, TCSG, TCLA, TCT, TCDQ)
+    TCP_features["collimator_type"] = "TCP"
+    # Add a column to the dataframe that represents the beam type type (ION or PROTON)
+    TCP_features["beam_type"] = "PROTON"
+    # Add a column to the dataframe that represents the beam state (Injection (I) or Flat top (FT))
+    TCP_features["beam_state"] = "I"
+    # Add a column to the dataframe that represents the path
+    TCP_features["path"] = f
+    TCP_features = pd.concat(TCP_features, ignore_index=True)
+'''
 # Load of all TCSG features from "1-test_2018"
 path = r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/1-test_2018/*_TCSG*_Align_features'
 all_rec = iglob(path, recursive=True)     
@@ -484,3 +488,4 @@ ION_dataframe.to_csv("ION_dataframe.csv")
 frames = [I_test_2018_dataframe, II_test_2018_dataframe, MD3_2018_dataframe, MD4_2018_dataframe, III_inj_2018_dataframe, IV_flat_2018_dataframe]
 total_dataframe = pd.concat(frames)
 total_dataframe.to_csv("Auto_2018_dataset_NO_TCL.csv")
+'''
