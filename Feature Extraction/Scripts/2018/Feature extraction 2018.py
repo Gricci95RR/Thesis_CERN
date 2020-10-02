@@ -28,22 +28,25 @@ def stampa(i,pos_sigma,max_val,s_h,popt,jaw_):
     print('Jaw:',jaw_) 
 
 # import of i_col_info
-i_col_info = pd.read_csv(r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/col_info/2018/f_col_info.csv')
+i_col_info = pd.read_csv(r'/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/col_info/2018/i_col_info.csv')
 # names of the files to import
-filenames = iglob('/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/4-flat_2018/*_Align')
+filenames = iglob('/Users/gianmarcoricci/Google Drive/UNI/Thesis CERN/Data/Auto_data/1-test_2018/*_Align')
 
 pos_sigma = []
 spike_height = []
 max_value = []
 exp = []
 collimator_type = []
-
 beam_state = []
 beam_type = []
 spike = []
 jaw = []
+full_path = []
+alignment = []
 beam_state_='FT'
+
 for i in filenames:
+    
     df = pd.read_csv(i, sep="=", header = None, nrows=9)
     df2 = pd.read_csv(i, skiprows=10, header = None)
     df3 = pd.concat([df, df2])
@@ -52,6 +55,7 @@ for i in filenames:
     theta = df3.iat[2,1]
     LU = df3.iat[5,1] 
     RU = df3.iat[7,1] 
+    
     try:
         name = df3.iat[9,0]
         name2 = name[17:]
@@ -97,12 +101,13 @@ for i in filenames:
                     spike_height.append(s_h)
                     max_value.append(max_val)
                     exp.append(popt)
+                    full_path.append(i)
+                    alignment.append(i.split('/')[-1])
                     # collimator type
                     for kk in range(0, len(name2)):
                         if name2[kk] == "." and kk<6:
                             collimator_type.append(name2[:kk])
-                    if(i[89:]=='TCP.D6L7.B1_Align'):
-                        stampa(i,pos_sigma_,max_val,s_h,popt,jaw_)        
+                    stampa(i,pos_sigma_,max_val,s_h,popt,jaw_)       
                 elif df3.iat[4,1] == 0:
                     jaw_=0
                     jaw.append(jaw_)
@@ -113,12 +118,13 @@ for i in filenames:
                     spike_height.append(s_h)
                     max_value.append(max_val)
                     exp.append(popt)
+                    full_path.append(i)
+                    alignment.append(i.split('/')[-1])
                     # collimator type
                     for kk in range(0, len(name2)):
                         if name2[kk] == "." and kk<6:
                             collimator_type.append(name2[:kk])
-                    if(i[89:]=='TCP.D6L7.B1_Align'):
-                        stampa(i,pos_sigma_,max_val,s_h,popt,jaw_) 
+                    stampa(i,pos_sigma_,max_val,s_h,popt,jaw_) 
                 elif df3.iat[3,1] != 0 and df3.iat[4,1] !=0:
                     jaw_=1
                     jaw.append(jaw_)
@@ -131,11 +137,12 @@ for i in filenames:
                     beam_type.append('PROTON')
                     beam_state.append(beam_state_)
                     exp.append(popt)
+                    full_path.append(i)
+                    alignment.append(i.split('/')[-1])
                     for kk in range(0, len(name2)):
                         if name2[kk] == "." and kk<6:
                             collimator_type.append(name2[:kk])
-                    if(i[89:]=='TCP.D6L7.B1_Align'):
-                        stampa(i,pos_sigma_,max_val,s_h,popt,jaw_) 
+                    stampa(i,pos_sigma_,max_val,s_h,popt,jaw_)
                     
                     pos_sigma_ = np.abs(LU) / beam_size #left
                     pos_sigma.append(pos_sigma_)
@@ -144,12 +151,13 @@ for i in filenames:
                     spike_height.append(s_h)
                     max_value.append(max_val)
                     exp.append(popt)
+                    full_path.append(i)
+                    alignment.append(i.split('/')[-1])
                     # collimator type
                     for kk in range(0, len(name2)):
                         if name2[kk] == "." and kk<6:
                             collimator_type.append(name2[:kk])
-                    if(i[89:]=='TCP.D6L7.B1_Align'):
-                        stampa(i,pos_sigma_,max_val,s_h,popt,jaw_) 
+                    stampa(i,pos_sigma_,max_val,s_h,popt,jaw_) 
             except RuntimeError as e:
                 pass
             
@@ -165,6 +173,7 @@ for j in range(0,len(exp)):
     exp_c.append(exp[j][2])           
 
 data = {
+        'alignment': alignment,
         'jaw': jaw,
         'height': spike_height,
         'position': pos_sigma,
@@ -172,6 +181,7 @@ data = {
         'decay_a': exp_a,
         'decay_b': exp_b,
         'decay_c': exp_c,
+        'full_path': full_path,
         #'spike': spike,
         'collimator_type': collimator_type,
         'beam_type': beam_type,
@@ -192,4 +202,4 @@ print(len(beam_state))
 df2 = pd.DataFrame (data) 
 print(df2)
 
-df2.to_csv('4-flat_2018.csv')
+#df2.to_csv('4-flat_2018.csv')
