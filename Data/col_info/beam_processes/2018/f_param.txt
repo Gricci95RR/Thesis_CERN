@@ -1,0 +1,440 @@
+TCDD.4L2/BBParam#sigma_x	
+TCDD.4L2/BBParam#sigma_xp	
+TCDD.4L2/BBParam#sigma_y	
+TCDD.4L2/BBParam#sigma_yp	
+TCDIH.29050/BBParam#sigma_x	
+TCDIH.29050/BBParam#sigma_xp	
+TCDIH.29050/BBParam#sigma_y	
+TCDIH.29050/BBParam#sigma_yp	
+TCDIH.29205/BBParam#sigma_x	
+TCDIH.29205/BBParam#sigma_xp	
+TCDIH.29205/BBParam#sigma_y	
+TCDIH.29205/BBParam#sigma_yp	
+TCDIH.29465/BBParam#sigma_x	
+TCDIH.29465/BBParam#sigma_xp	
+TCDIH.29465/BBParam#sigma_y	
+TCDIH.29465/BBParam#sigma_yp	
+TCDIH.87441/BBParam#sigma_x	
+TCDIH.87441/BBParam#sigma_xp	
+TCDIH.87441/BBParam#sigma_y	
+TCDIH.87441/BBParam#sigma_yp	
+TCDIH.87904/BBParam#sigma_x	
+TCDIH.87904/BBParam#sigma_xp	
+TCDIH.87904/BBParam#sigma_y	
+TCDIH.87904/BBParam#sigma_yp	
+TCDIH.88121/BBParam#sigma_x	
+TCDIH.88121/BBParam#sigma_xp	
+TCDIH.88121/BBParam#sigma_y	
+TCDIH.88121/BBParam#sigma_yp	
+TCDIV.20607/BBParam#sigma_x	
+TCDIV.20607/BBParam#sigma_xp	
+TCDIV.20607/BBParam#sigma_y	
+TCDIV.20607/BBParam#sigma_yp	
+TCDIV.29012/BBParam#sigma_x	
+TCDIV.29012/BBParam#sigma_xp	
+TCDIV.29012/BBParam#sigma_y	
+TCDIV.29012/BBParam#sigma_yp	
+TCDIV.29234/BBParam#sigma_x	
+TCDIV.29234/BBParam#sigma_xp	
+TCDIV.29234/BBParam#sigma_y	
+TCDIV.29234/BBParam#sigma_yp	
+TCDIV.29509/BBParam#sigma_x	
+TCDIV.29509/BBParam#sigma_xp	
+TCDIV.29509/BBParam#sigma_y	
+TCDIV.29509/BBParam#sigma_yp	
+TCDIV.87645/BBParam#sigma_x	
+TCDIV.87645/BBParam#sigma_xp	
+TCDIV.87645/BBParam#sigma_y	
+TCDIV.87645/BBParam#sigma_yp	
+TCDIV.87804/BBParam#sigma_x	
+TCDIV.87804/BBParam#sigma_xp	
+TCDIV.87804/BBParam#sigma_y	
+TCDIV.87804/BBParam#sigma_yp	
+TCDIV.88123/BBParam#sigma_x	
+TCDIV.88123/BBParam#sigma_xp	
+TCDIV.88123/BBParam#sigma_y	
+TCDIV.88123/BBParam#sigma_yp	
+TCDQA.A4L6.B2/BBParam#sigma_x	(double:1) -> 0.5004043098927441
+TCDQA.A4L6.B2/BBParam#sigma_xp	(double:1) -> 0.0010096305308961904
+TCDQA.A4L6.B2/BBParam#sigma_y	(double:1) -> 0.28381160578997555
+TCDQA.A4L6.B2/BBParam#sigma_yp	(double:1) -> 0.0017801367482964214
+TCDQA.A4R6.B1/BBParam#sigma_x	(double:1) -> 0.4971783904734075
+TCDQA.A4R6.B1/BBParam#sigma_xp	(double:1) -> 0.0010161814727681245
+TCDQA.A4R6.B1/BBParam#sigma_y	(double:1) -> 0.27826851327158403
+TCDQA.A4R6.B1/BBParam#sigma_yp	(double:1) -> 0.0018155969682659202
+TCL.4L1.B2/BBParam#sigma_x	(double:1) -> 0.403205874519666
+TCL.4L1.B2/BBParam#sigma_xp	(double:1) -> 0.0012530163459059914
+TCL.4L1.B2/BBParam#sigma_y	(double:1) -> 0.5970612199397709
+TCL.4L1.B2/BBParam#sigma_yp	(double:1) -> 8.461838328562462E-4
+TCL.4L5.B2/BBParam#sigma_x	(double:1) -> 0.40320574921801194
+TCL.4L5.B2/BBParam#sigma_xp	(double:1) -> 0.0012530167352978116
+TCL.4L5.B2/BBParam#sigma_y	(double:1) -> 0.5970611776305775
+TCL.4L5.B2/BBParam#sigma_yp	(double:1) -> 8.46183892818871E-4
+TCL.4R1.B1/BBParam#sigma_x	(double:1) -> 0.40320549861458715
+TCL.4R1.B1/BBParam#sigma_xp	(double:1) -> 0.0012530175140825417
+TCL.4R1.B1/BBParam#sigma_y	(double:1) -> 0.5970611353213815
+TCL.4R1.B1/BBParam#sigma_yp	(double:1) -> 8.461839527815082E-4
+TCL.4R5.B1/BBParam#sigma_x	(double:1) -> 0.4032056865671705
+TCL.4R5.B1/BBParam#sigma_xp	(double:1) -> 0.0012530169299938576
+TCL.4R5.B1/BBParam#sigma_y	(double:1) -> 0.5970612199397709
+TCL.4R5.B1/BBParam#sigma_yp	(double:1) -> 8.461838328562462E-4
+TCL.5L1.B2/BBParam#sigma_x	(double:1) -> 0.22227689621108696
+TCL.5L1.B2/BBParam#sigma_xp	(double:1) -> 0.0022729467621262454
+TCL.5L1.B2/BBParam#sigma_y	(double:1) -> 0.4716594760798126
+TCL.5L1.B2/BBParam#sigma_yp	(double:1) -> 0.001071161668875215
+TCL.5L5.B2/BBParam#sigma_x	(double:1) -> 0.22195169512059923
+TCL.5L5.B2/BBParam#sigma_xp	(double:1) -> 0.002276277057780272
+TCL.5L5.B2/BBParam#sigma_y	(double:1) -> 0.4710276030219668
+TCL.5L5.B2/BBParam#sigma_yp	(double:1) -> 0.0010725986084405758
+TCL.5R1.B1/BBParam#sigma_x	(double:1) -> 0.2246336198777068
+TCL.5R1.B1/BBParam#sigma_xp	(double:1) -> 0.002249100343098737
+TCL.5R1.B1/BBParam#sigma_y	(double:1) -> 0.4655527767496886
+TCL.5R1.B1/BBParam#sigma_yp	(double:1) -> 0.0010852121967046123
+TCL.5R5.B1/BBParam#sigma_x	(double:1) -> 0.2249423216937393
+TCL.5R5.B1/BBParam#sigma_xp	(double:1) -> 0.0022460137680375123
+TCL.5R5.B1/BBParam#sigma_y	(double:1) -> 0.4662190543505014
+TCL.5R5.B1/BBParam#sigma_yp	(double:1) -> 0.0010836613107593769
+TCL.6L1.B2/BBParam#sigma_x	(double:1) -> 0.08588570773243251
+TCL.6L1.B2/BBParam#sigma_xp	(double:1) -> 0.005882510197301164
+TCL.6L1.B2/BBParam#sigma_y	(double:1) -> 0.34941495073068923
+TCL.6L1.B2/BBParam#sigma_yp	(double:1) -> 0.0014459128050529856
+TCL.6L5.B2/BBParam#sigma_x	(double:1) -> 0.08378508092752847
+TCL.6L5.B2/BBParam#sigma_xp	(double:1) -> 0.006029994194019631
+TCL.6L5.B2/BBParam#sigma_y	(double:1) -> 0.3462275013212239
+TCL.6L5.B2/BBParam#sigma_yp	(double:1) -> 0.001459224208390436
+TCL.6R1.B1/BBParam#sigma_x	(double:1) -> 0.08586952930561198
+TCL.6R1.B1/BBParam#sigma_xp	(double:1) -> 0.005883618503839206
+TCL.6R1.B1/BBParam#sigma_y	(double:1) -> 0.3436391582356929
+TCL.6R1.B1/BBParam#sigma_yp	(double:1) -> 0.0014702153099558646
+TCL.6R5.B1/BBParam#sigma_x	(double:1) -> 0.08214140252297254
+TCL.6R5.B1/BBParam#sigma_xp	(double:1) -> 0.006150656502330422
+TCL.6R5.B1/BBParam#sigma_y	(double:1) -> 0.3398054314049468
+TCL.6R5.B1/BBParam#sigma_yp	(double:1) -> 0.0014868024606010072
+TCLA.6L3.B2/BBParam#sigma_x	(double:1) -> 0.2557248063571278
+TCLA.6L3.B2/BBParam#sigma_xp	(double:1) -> 0.0019756532764087847
+TCLA.6L3.B2/BBParam#sigma_y	(double:1) -> 0.29195440889266805
+TCLA.6L3.B2/BBParam#sigma_yp	(double:1) -> 0.0017304878301193877
+TCLA.6R3.B1/BBParam#sigma_x	(double:1) -> 0.25572618931068186
+TCLA.6R3.B1/BBParam#sigma_xp	(double:1) -> 0.0019756425921815353
+TCLA.6R3.B1/BBParam#sigma_y	(double:1) -> 0.29195207272475066
+TCLA.6R3.B1/BBParam#sigma_yp	(double:1) -> 0.0017305016772899606
+TCLA.7L3.B2/BBParam#sigma_x	(double:1) -> 0.18417830753402573
+TCLA.7L3.B2/BBParam#sigma_xp	(double:1) -> 0.0027431219143173244
+TCLA.7L3.B2/BBParam#sigma_y	(double:1) -> 0.21434484165343978
+TCLA.7L3.B2/BBParam#sigma_yp	(double:1) -> 0.002357059529127016
+TCLA.7R3.B1/BBParam#sigma_x	(double:1) -> 0.18437947424343748
+TCLA.7R3.B1/BBParam#sigma_xp	(double:1) -> 0.002740129038828972
+TCLA.7R3.B1/BBParam#sigma_y	(double:1) -> 0.21325987541150687
+TCLA.7R3.B1/BBParam#sigma_yp	(double:1) -> 0.002369051142712997
+TCLA.A5L3.B2/BBParam#sigma_x	(double:1) -> 0.2683488009918931
+TCLA.A5L3.B2/BBParam#sigma_xp	(double:1) -> 0.0018827121629424552
+TCLA.A5L3.B2/BBParam#sigma_y	(double:1) -> 0.29820626074312634
+TCLA.A5L3.B2/BBParam#sigma_yp	(double:1) -> 0.0016942083988426356
+TCLA.A5R3.B1/BBParam#sigma_x	(double:1) -> 0.26834993061681334
+TCLA.A5R3.B1/BBParam#sigma_xp	(double:1) -> 0.0018827042376243007
+TCLA.A5R3.B1/BBParam#sigma_y	(double:1) -> 0.29820465124080403
+TCLA.A5R3.B1/BBParam#sigma_yp	(double:1) -> 0.0016942175430070246
+TCLA.A6L7.B2/BBParam#sigma_x	(double:1) -> 0.3874174982039371
+TCLA.A6L7.B2/BBParam#sigma_xp	(double:1) -> 0.0013040803626079664
+TCLA.A6L7.B2/BBParam#sigma_y	(double:1) -> 0.1559771242717712
+TCLA.A6L7.B2/BBParam#sigma_yp	(double:1) -> 0.0032390874873303266
+TCLA.A6R7.B1/BBParam#sigma_x	(double:1) -> 0.3874174982039371
+TCLA.A6R7.B1/BBParam#sigma_xp	(double:1) -> 0.0013040803626079667
+TCLA.A6R7.B1/BBParam#sigma_y	(double:1) -> 0.1559771242717712
+TCLA.A6R7.B1/BBParam#sigma_yp	(double:1) -> 0.0032390874873303274
+TCLA.A7L7.B2/BBParam#sigma_x	(double:1) -> 0.18208186389707925
+TCLA.A7L7.B2/BBParam#sigma_xp	(double:1) -> 0.002774705512812832
+TCLA.A7L7.B2/BBParam#sigma_y	(double:1) -> 0.2696776239170925
+TCLA.A7L7.B2/BBParam#sigma_yp	(double:1) -> 0.0018734351934730166
+TCLA.A7R7.B1/BBParam#sigma_x	(double:1) -> 0.1839239404897893
+TCLA.A7R7.B1/BBParam#sigma_xp	(double:1) -> 0.0027469156554228435
+TCLA.A7R7.B1/BBParam#sigma_y	(double:1) -> 0.26656180528026874
+TCLA.A7R7.B1/BBParam#sigma_yp	(double:1) -> 0.0018953336206860498
+TCLA.B5L3.B2/BBParam#sigma_x	(double:1) -> 0.27676946741583425
+TCLA.B5L3.B2/BBParam#sigma_xp	(double:1) -> 0.0018254309489253917
+TCLA.B5L3.B2/BBParam#sigma_y	(double:1) -> 0.29193442107402595
+TCLA.B5L3.B2/BBParam#sigma_yp	(double:1) -> 0.0017306063111014638
+TCLA.B5R3.B1/BBParam#sigma_x	(double:1) -> 0.27677065394340766
+TCLA.B5R3.B1/BBParam#sigma_xp	(double:1) -> 0.0018254231232252194
+TCLA.B5R3.B1/BBParam#sigma_y	(double:1) -> 0.29193277699340087
+TCLA.B5R3.B1/BBParam#sigma_yp	(double:1) -> 0.001730616057373654
+TCLA.B6L7.B2/BBParam#sigma_x	(double:1) -> 0.2838776875137951
+TCLA.B6L7.B2/BBParam#sigma_xp	(double:1) -> 0.0017797226543699745
+TCLA.B6L7.B2/BBParam#sigma_y	(double:1) -> 0.19645194134742106
+TCLA.B6L7.B2/BBParam#sigma_yp	(double:1) -> 0.0025717412007906022
+TCLA.B6R7.B1/BBParam#sigma_x	(double:1) -> 0.2838776875137951
+TCLA.B6R7.B1/BBParam#sigma_xp	(double:1) -> 0.0017797226543699745
+TCLA.B6R7.B1/BBParam#sigma_y	(double:1) -> 0.1964519284887146
+TCLA.B6R7.B1/BBParam#sigma_yp	(double:1) -> 0.0025717413691232083
+TCLA.C6L7.B2/BBParam#sigma_x	(double:1) -> 0.18619133280939523
+TCLA.C6L7.B2/BBParam#sigma_xp	(double:1) -> 0.0027134643912542417
+TCLA.C6L7.B2/BBParam#sigma_y	(double:1) -> 0.2770171588329633
+TCLA.C6L7.B2/BBParam#sigma_yp	(double:1) -> 0.0018237987627441625
+TCLA.C6R7.B1/BBParam#sigma_x	(double:1) -> 0.18619133280939523
+TCLA.C6R7.B1/BBParam#sigma_xp	(double:1) -> 0.0027134643912542417
+TCLA.C6R7.B1/BBParam#sigma_y	(double:1) -> 0.27701706764301015
+TCLA.C6R7.B1/BBParam#sigma_yp	(double:1) -> 0.001823799363111949
+TCLA.D6L7.B2/BBParam#sigma_x	(double:1) -> 0.1812859481327547
+TCLA.D6L7.B2/BBParam#sigma_xp	(double:1) -> 0.0027868875483304926
+TCLA.D6L7.B2/BBParam#sigma_y	(double:1) -> 0.28246132130860374
+TCLA.D6L7.B2/BBParam#sigma_yp	(double:1) -> 0.0017886468462224548
+TCLA.D6R7.B1/BBParam#sigma_x	(double:1) -> 0.18128596206719194
+TCLA.D6R7.B1/BBParam#sigma_xp	(double:1) -> 0.002786887334118045
+TCLA.D6R7.B1/BBParam#sigma_y	(double:1) -> 0.28246132130860374
+TCLA.D6R7.B1/BBParam#sigma_yp	(double:1) -> 0.0017886468462224548
+TCLIA.4L8/BBParam#sigma_x	
+TCLIA.4L8/BBParam#sigma_xp	
+TCLIA.4L8/BBParam#sigma_y	
+TCLIA.4L8/BBParam#sigma_yp	
+TCLIA.4R2/BBParam#sigma_x	
+TCLIA.4R2/BBParam#sigma_xp	
+TCLIA.4R2/BBParam#sigma_y	
+TCLIA.4R2/BBParam#sigma_yp	
+TCLIB.6L8.B2/BBParam#sigma_x	
+TCLIB.6L8.B2/BBParam#sigma_xp	
+TCLIB.6L8.B2/BBParam#sigma_y	
+TCLIB.6L8.B2/BBParam#sigma_yp	
+TCLIB.6R2.B1/BBParam#sigma_x	
+TCLIB.6R2.B1/BBParam#sigma_xp	
+TCLIB.6R2.B1/BBParam#sigma_y	
+TCLIB.6R2.B1/BBParam#sigma_yp	
+TCLVW.A5L1.B2/BBParam#sigma_x	
+TCLVW.A5L1.B2/BBParam#sigma_xp	
+TCLVW.A5L1.B2/BBParam#sigma_y	
+TCLVW.A5L1.B2/BBParam#sigma_yp	
+TCP.6L3.B1/BBParam#sigma_x	(double:1) -> 0.25777707887348056
+TCP.6L3.B1/BBParam#sigma_xp	(double:1) -> 0.00195992426381102
+TCP.6L3.B1/BBParam#sigma_y	(double:1) -> 0.27037691367116345
+TCP.6L3.B1/BBParam#sigma_yp	(double:1) -> 0.0018685898314266657
+TCP.6R3.B2/BBParam#sigma_x	(double:1) -> 0.25777698087724876
+TCP.6R3.B2/BBParam#sigma_xp	(double:1) -> 0.001959925008893811
+TCP.6R3.B2/BBParam#sigma_y	(double:1) -> 0.27037476478431793
+TCP.6R3.B2/BBParam#sigma_yp	(double:1) -> 0.0018686046826207545
+TCP.B6L7.B1/BBParam#sigma_x	(double:1) -> 0.26828289797372284
+TCP.B6L7.B1/BBParam#sigma_xp	(double:1) -> 0.0018831746464433455
+TCP.B6L7.B1/BBParam#sigma_y	(double:1) -> 0.21024067051736522
+TCP.B6L7.B1/BBParam#sigma_yp	(double:1) -> 0.002403072394580913
+TCP.B6R7.B2/BBParam#sigma_x	(double:1) -> 0.26828289797372284
+TCP.B6R7.B2/BBParam#sigma_xp	(double:1) -> 0.001883174646443345
+TCP.B6R7.B2/BBParam#sigma_y	(double:1) -> 0.21024067051736525
+TCP.B6R7.B2/BBParam#sigma_yp	(double:1) -> 0.0024030723945809127
+TCP.C6L7.B1/BBParam#sigma_x	(double:1) -> 0.27577290466037946
+TCP.C6L7.B1/BBParam#sigma_xp	(double:1) -> 0.0018320275233734648
+TCP.C6L7.B1/BBParam#sigma_y	(double:1) -> 0.20448454206897648
+TCP.C6L7.B1/BBParam#sigma_yp	(double:1) -> 0.0024707175732043363
+TCP.C6R7.B2/BBParam#sigma_x	(double:1) -> 0.27577290466037946
+TCP.C6R7.B2/BBParam#sigma_xp	(double:1) -> 0.0018320275233734648
+TCP.C6R7.B2/BBParam#sigma_y	(double:1) -> 0.20448454206897648
+TCP.C6R7.B2/BBParam#sigma_yp	(double:1) -> 0.0024707175732043363
+TCP.D6L7.B1/BBParam#sigma_x	(double:1) -> 0.28331161624821743
+TCP.D6L7.B1/BBParam#sigma_xp	(double:1) -> 0.0017832786323022515
+TCP.D6L7.B1/BBParam#sigma_y	(double:1) -> 0.1988478880704096
+TCP.D6L7.B1/BBParam#sigma_yp	(double:1) -> 0.0025407539222119784
+TCP.D6R7.B2/BBParam#sigma_x	(double:1) -> 0.28331161624821743
+TCP.D6R7.B2/BBParam#sigma_xp	(double:1) -> 0.0017832786323022515
+TCP.D6R7.B2/BBParam#sigma_y	(double:1) -> 0.1988478880704096
+TCP.D6R7.B2/BBParam#sigma_yp	(double:1) -> 0.0025407539222119784
+TCSG.4L3.B2/BBParam#sigma_x	(double:1) -> 0.1150733195312404
+TCSG.4L3.B2/BBParam#sigma_xp	(double:1) -> 0.004390449094512323
+TCSG.4L3.B2/BBParam#sigma_y	(double:1) -> 0.4468359622905804
+TCSG.4L3.B2/BBParam#sigma_yp	(double:1) -> 0.0011306689572356116
+TCSG.4R3.B1/BBParam#sigma_x	(double:1) -> 0.11507281462848684
+TCSG.4R3.B1/BBParam#sigma_xp	(double:1) -> 0.004390468358400533
+TCSG.4R3.B1/BBParam#sigma_y	(double:1) -> 0.446835283888691
+TCSG.4R3.B1/BBParam#sigma_yp	(double:1) -> 0.0011306706738591294
+TCSG.5L3.B1/BBParam#sigma_x	(double:1) -> 0.16609594633789557
+TCSG.5L3.B1/BBParam#sigma_xp	(double:1) -> 0.0030417572654703154
+TCSG.5L3.B1/BBParam#sigma_y	(double:1) -> 0.3884227484469821
+TCSG.5L3.B1/BBParam#sigma_yp	(double:1) -> 0.0013007053617700823
+TCSG.5R3.B2/BBParam#sigma_x	(double:1) -> 0.1660952163145476
+TCSG.5R3.B2/BBParam#sigma_xp	(double:1) -> 0.0030417706346321256
+TCSG.5R3.B2/BBParam#sigma_y	(double:1) -> 0.3884189113472123
+TCSG.5R3.B2/BBParam#sigma_yp	(double:1) -> 0.001300718211134772
+TCSG.6L7.B2/BBParam#sigma_x	(double:1) -> 0.4118741021278934
+TCSG.6L7.B2/BBParam#sigma_xp	(double:1) -> 0.001226645591282119
+TCSG.6L7.B2/BBParam#sigma_y	(double:1) -> 0.15467787577091627
+TCSG.6L7.B2/BBParam#sigma_yp	(double:1) -> 0.0032662948661560144
+TCSG.6R7.B1/BBParam#sigma_x	(double:1) -> 0.4118741021278934
+TCSG.6R7.B1/BBParam#sigma_xp	(double:1) -> 0.001226645591282119
+TCSG.6R7.B1/BBParam#sigma_y	(double:1) -> 0.15467789210238975
+TCSG.6R7.B1/BBParam#sigma_yp	(double:1) -> 0.00326629452128832
+TCSG.A4L7.B1/BBParam#sigma_x	(double:1) -> 0.2549660175834429
+TCSG.A4L7.B1/BBParam#sigma_xp	(double:1) -> 0.00198153289731294
+TCSG.A4L7.B1/BBParam#sigma_y	(double:1) -> 0.2671811441775927
+TCSG.A4L7.B1/BBParam#sigma_yp	(double:1) -> 0.0018909401450973818
+TCSG.A4L7.B2/BBParam#sigma_x	(double:1) -> 0.22431217337474268
+TCSG.A4L7.B2/BBParam#sigma_xp	(double:1) -> 0.0022523233756663744
+TCSG.A4L7.B2/BBParam#sigma_y	(double:1) -> 0.29814704227971955
+TCSG.A4L7.B2/BBParam#sigma_yp	(double:1) -> 0.0016945449053439349
+TCSG.A4R7.B1/BBParam#sigma_x	(double:1) -> 0.24445530761649642
+TCSG.A4R7.B1/BBParam#sigma_xp	(double:1) -> 0.002066731773854796
+TCSG.A4R7.B1/BBParam#sigma_y	(double:1) -> 0.27731801344710755
+TCSG.A4R7.B1/BBParam#sigma_yp	(double:1) -> 0.0018218201740970647
+TCSG.A4R7.B2/BBParam#sigma_x	(double:1) -> 0.26572350779251197
+TCSG.A4R7.B2/BBParam#sigma_xp	(double:1) -> 0.001901312969016506
+TCSG.A4R7.B2/BBParam#sigma_y	(double:1) -> 0.2572586475622472
+TCSG.A4R7.B2/BBParam#sigma_yp	(double:1) -> 0.0019638739312590682
+TCSG.A5L3.B2/BBParam#sigma_x	(double:1) -> 0.13461696460615266
+TCSG.A5L3.B2/BBParam#sigma_xp	(double:1) -> 0.0037530451902298384
+TCSG.A5L3.B2/BBParam#sigma_y	(double:1) -> 0.4169577795186629
+TCSG.A5L3.B2/BBParam#sigma_yp	(double:1) -> 0.001211689951250443
+TCSG.A5L7.B1/BBParam#sigma_x	(double:1) -> 0.306543723583433
+TCSG.A5L7.B1/BBParam#sigma_xp	(double:1) -> 0.0016481288399335086
+TCSG.A5L7.B1/BBParam#sigma_y	(double:1) -> 0.2715306420855161
+TCSG.A5L7.B1/BBParam#sigma_yp	(double:1) -> 0.0018606502295948834
+TCSG.A5R3.B1/BBParam#sigma_x	(double:1) -> 0.1346168332495069
+TCSG.A5R3.B1/BBParam#sigma_xp	(double:1) -> 0.0037530488523827474
+TCSG.A5R3.B1/BBParam#sigma_y	(double:1) -> 0.41695681016557523
+TCSG.A5R3.B1/BBParam#sigma_yp	(double:1) -> 0.00121169276822181
+TCSG.A5R7.B2/BBParam#sigma_x	(double:1) -> 0.30654364117697996
+TCSG.A5R7.B2/BBParam#sigma_xp	(double:1) -> 0.0016481292829909845
+TCSG.A5R7.B2/BBParam#sigma_y	(double:1) -> 0.2715306420855161
+TCSG.A5R7.B2/BBParam#sigma_yp	(double:1) -> 0.0018606502295948834
+TCSG.A6L7.B1/BBParam#sigma_x	(double:1) -> 0.1419311284495021
+TCSG.A6L7.B1/BBParam#sigma_xp	(double:1) -> 0.0035596387984628466
+TCSG.A6L7.B1/BBParam#sigma_y	(double:1) -> 0.3385972637878829
+TCSG.A6L7.B1/BBParam#sigma_yp	(double:1) -> 0.0014921076026620317
+TCSG.A6R7.B2/BBParam#sigma_x	(double:1) -> 0.14193112844950206
+TCSG.A6R7.B2/BBParam#sigma_xp	(double:1) -> 0.003559638798462847
+TCSG.A6R7.B2/BBParam#sigma_y	(double:1) -> 0.3385972637878829
+TCSG.A6R7.B2/BBParam#sigma_yp	(double:1) -> 0.0014921076026620317
+TCSG.B4L7.B1/BBParam#sigma_x	(double:1) -> 0.26572350779251186
+TCSG.B4L7.B1/BBParam#sigma_xp	(double:1) -> 0.0019013129690165066
+TCSG.B4L7.B1/BBParam#sigma_y	(double:1) -> 0.2572586475622472
+TCSG.B4L7.B1/BBParam#sigma_yp	(double:1) -> 0.0019638739312590682
+TCSG.B4R7.B2/BBParam#sigma_x	(double:1) -> 0.27669899680964827
+TCSG.B4R7.B2/BBParam#sigma_xp	(double:1) -> 0.0018258958556543808
+TCSG.B4R7.B2/BBParam#sigma_y	(double:1) -> 0.24757630017184007
+TCSG.B4R7.B2/BBParam#sigma_yp	(double:1) -> 0.002040678171488108
+TCSG.B5L3.B2/BBParam#sigma_x	(double:1) -> 0.1516822722794886
+TCSG.B5L3.B2/BBParam#sigma_xp	(double:1) -> 0.0033308015758594417
+TCSG.B5L3.B2/BBParam#sigma_y	(double:1) -> 0.39745785229271724
+TCSG.B5L3.B2/BBParam#sigma_yp	(double:1) -> 0.0012711374265827254
+TCSG.B5L7.B1/BBParam#sigma_x	(double:1) -> 0.28433026616228
+TCSG.B5L7.B1/BBParam#sigma_xp	(double:1) -> 0.0017768898062020168
+TCSG.B5L7.B1/BBParam#sigma_y	(double:1) -> 0.2900491548357805
+TCSG.B5L7.B1/BBParam#sigma_yp	(double:1) -> 0.0017418549342938378
+TCSG.B5L7.B2/BBParam#sigma_x	(double:1) -> 0.24812290462080913
+TCSG.B5L7.B2/BBParam#sigma_xp	(double:1) -> 0.00203618264226982
+TCSG.B5L7.B2/BBParam#sigma_y	(double:1) -> 0.36768047331505815
+TCSG.B5L7.B2/BBParam#sigma_yp	(double:1) -> 0.001374083173314307
+TCSG.B5R3.B1/BBParam#sigma_x	(double:1) -> 0.1516823555495051
+TCSG.B5R3.B1/BBParam#sigma_xp	(double:1) -> 0.0033307997473283565
+TCSG.B5R3.B1/BBParam#sigma_y	(double:1) -> 0.397456835381475
+TCSG.B5R3.B1/BBParam#sigma_yp	(double:1) -> 0.0012711406788451709
+TCSG.B5R7.B1/BBParam#sigma_x	(double:1) -> 0.24812280281165622
+TCSG.B5R7.B1/BBParam#sigma_xp	(double:1) -> 0.0020361834777513944
+TCSG.B5R7.B1/BBParam#sigma_y	(double:1) -> 0.3676805420192106
+TCSG.B5R7.B1/BBParam#sigma_yp	(double:1) -> 0.0013740829165554936
+TCSG.B5R7.B2/BBParam#sigma_x	(double:1) -> 0.28433017731777577
+TCSG.B5R7.B2/BBParam#sigma_xp	(double:1) -> 0.0017768903614258605
+TCSG.B5R7.B2/BBParam#sigma_y	(double:1) -> 0.29004915483578053
+TCSG.B5R7.B2/BBParam#sigma_yp	(double:1) -> 0.0017418549342938373
+TCSG.D4L7.B1/BBParam#sigma_x	(double:1) -> 0.4101451964282657
+TCSG.D4L7.B1/BBParam#sigma_xp	(double:1) -> 0.0012318163322115733
+TCSG.D4L7.B1/BBParam#sigma_y	(double:1) -> 0.18652163476696842
+TCSG.D4L7.B1/BBParam#sigma_yp	(double:1) -> 0.0027086592510818636
+TCSG.D4R7.B2/BBParam#sigma_x	(double:1) -> 0.4101451964282657
+TCSG.D4R7.B2/BBParam#sigma_xp	(double:1) -> 0.0012318163322115733
+TCSG.D4R7.B2/BBParam#sigma_y	(double:1) -> 0.18652164831026416
+TCSG.D4R7.B2/BBParam#sigma_yp	(double:1) -> 0.002708659054406713
+TCSG.D5L7.B2/BBParam#sigma_x	(double:1) -> 0.3287287926164175
+TCSG.D5L7.B2/BBParam#sigma_xp	(double:1) -> 0.0015369008218516164
+TCSG.D5L7.B2/BBParam#sigma_y	(double:1) -> 0.2830289147025348
+TCSG.D5L7.B2/BBParam#sigma_yp	(double:1) -> 0.0017850598482824797
+TCSG.D5R7.B1/BBParam#sigma_x	(double:1) -> 0.3287287926164174
+TCSG.D5R7.B1/BBParam#sigma_xp	(double:1) -> 0.0015369008218516164
+TCSG.D5R7.B1/BBParam#sigma_y	(double:1) -> 0.2830289147025347
+TCSG.D5R7.B1/BBParam#sigma_yp	(double:1) -> 0.0017850598482824801
+TCSG.E5L7.B2/BBParam#sigma_x	(double:1) -> 0.3492398067946255
+TCSG.E5L7.B2/BBParam#sigma_xp	(double:1) -> 0.0014466379310407878
+TCSG.E5L7.B2/BBParam#sigma_y	(double:1) -> 0.2622409627088095
+TCSG.E5L7.B2/BBParam#sigma_yp	(double:1) -> 0.0019265622972085346
+TCSG.E5R7.B1/BBParam#sigma_x	(double:1) -> 0.3492398067946255
+TCSG.E5R7.B1/BBParam#sigma_xp	(double:1) -> 0.0014466379310407878
+TCSG.E5R7.B1/BBParam#sigma_y	(double:1) -> 0.2622409627088095
+TCSG.E5R7.B1/BBParam#sigma_yp	(double:1) -> 0.0019265622972085346
+TCSP.A4L6.B2/BBParam#sigma_x	(double:1) -> 0.5179730077406555
+TCSP.A4L6.B2/BBParam#sigma_xp	(double:1) -> 9.753858675806183E-4
+TCSP.A4L6.B2/BBParam#sigma_y	(double:1) -> 0.2936707665527044
+TCSP.A4L6.B2/BBParam#sigma_yp	(double:1) -> 0.0017203740006848463
+TCSP.A4R6.B1/BBParam#sigma_x	(double:1) -> 0.5146036492339923
+TCSP.A4R6.B1/BBParam#sigma_xp	(double:1) -> 9.817721897046525E-4
+TCSP.A4R6.B1/BBParam#sigma_y	(double:1) -> 0.2891844283358898
+TCSP.A4R6.B1/BBParam#sigma_yp	(double:1) -> 0.0017470634724205856
+TCSPM.D4R7.B2/BBParam#sigma_x	(double:1) -> 0.4151108905153169
+TCSPM.D4R7.B2/BBParam#sigma_xp	(double:1) -> 0.0012170809368823813
+TCSPM.D4R7.B2/BBParam#sigma_y	(double:1) -> 0.18171887581738275
+TCSPM.D4R7.B2/BBParam#sigma_yp	(double:1) -> 0.0027802480576986557
+TCTPH.4L1.B1/BBParam#sigma_x	(double:1) -> 0.599652745451137
+TCTPH.4L1.B1/BBParam#sigma_xp	(double:1) -> 8.425268713784784E-4
+TCTPH.4L1.B1/BBParam#sigma_y	(double:1) -> 0.41712023549290517
+TCTPH.4L1.B1/BBParam#sigma_yp	(double:1) -> 0.0012112180339116034
+TCTPH.4L2.B1/BBParam#sigma_x	(double:1) -> 0.20660793315069154
+TCTPH.4L2.B1/BBParam#sigma_xp	(double:1) -> 0.0024453250358492853
+TCTPH.4L2.B1/BBParam#sigma_y	(double:1) -> 0.22940688884250318
+TCTPH.4L2.B1/BBParam#sigma_yp	(double:1) -> 0.0022023033139397887
+TCTPH.4L5.B1/BBParam#sigma_x	(double:1) -> 0.6000161435575786
+TCTPH.4L5.B1/BBParam#sigma_xp	(double:1) -> 8.420165973250676E-4
+TCTPH.4L5.B1/BBParam#sigma_y	(double:1) -> 0.41654590443054845
+TCTPH.4L5.B1/BBParam#sigma_yp	(double:1) -> 0.0012128880542689347
+TCTPH.4L8.B1/BBParam#sigma_x	(double:1) -> 0.3439457818624799
+TCTPH.4L8.B1/BBParam#sigma_xp	(double:1) -> 0.0014689046302665966
+TCTPH.4L8.B1/BBParam#sigma_y	(double:1) -> 0.38088068036876654
+TCTPH.4L8.B1/BBParam#sigma_yp	(double:1) -> 0.0013264614814521623
+TCTPH.4R1.B2/BBParam#sigma_x	(double:1) -> 0.6002279575468332
+TCTPH.4R1.B2/BBParam#sigma_xp	(double:1) -> 8.417194587258812E-4
+TCTPH.4R1.B2/BBParam#sigma_y	(double:1) -> 0.4169608693165905
+TCTPH.4R1.B2/BBParam#sigma_yp	(double:1) -> 0.0012116809722853273
+TCTPH.4R2.B2/BBParam#sigma_x	(double:1) -> 0.20651491650113468
+TCTPH.4R2.B2/BBParam#sigma_xp	(double:1) -> 0.0024464264378485498
+TCTPH.4R2.B2/BBParam#sigma_y	(double:1) -> 0.22948351620014823
+TCTPH.4R2.B2/BBParam#sigma_yp	(double:1) -> 0.002201567937881088
+TCTPH.4R5.B2/BBParam#sigma_x	(double:1) -> 0.599886543206751
+TCTPH.4R5.B2/BBParam#sigma_xp	(double:1) -> 8.421985078007261E-4
+TCTPH.4R5.B2/BBParam#sigma_y	(double:1) -> 0.4169400884700691
+TCTPH.4R5.B2/BBParam#sigma_yp	(double:1) -> 0.0012117413640706561
+TCTPH.4R8.B2/BBParam#sigma_x	(double:1) -> 0.343922719286578
+TCTPH.4R8.B2/BBParam#sigma_xp	(double:1) -> 0.0014690031312455329
+TCTPH.4R8.B2/BBParam#sigma_y	(double:1) -> 0.3807697056988673
+TCTPH.4R8.B2/BBParam#sigma_yp	(double:1) -> 0.0013268480763488546
+TCTPV.4L1.B1/BBParam#sigma_x	(double:1) -> 0.6022623128317032
+TCTPV.4L1.B1/BBParam#sigma_xp	(double:1) -> 8.388762517166534E-4
+TCTPV.4L1.B1/BBParam#sigma_y	(double:1) -> 0.430318639999519
+TCTPV.4L1.B1/BBParam#sigma_yp	(double:1) -> 0.0011740684799036972
+TCTPV.4L2.B1/BBParam#sigma_x	(double:1) -> 0.20916645629141145
+TCTPV.4L2.B1/BBParam#sigma_xp	(double:1) -> 0.00241541383114787
+TCTPV.4L2.B1/BBParam#sigma_y	(double:1) -> 0.22813627486141105
+TCTPV.4L2.B1/BBParam#sigma_yp	(double:1) -> 0.0022145691291109945
+TCTPV.4L5.B1/BBParam#sigma_x	(double:1) -> 0.6026265685784304
+TCTPV.4L5.B1/BBParam#sigma_xp	(double:1) -> 8.383691955870146E-4
+TCTPV.4L5.B1/BBParam#sigma_y	(double:1) -> 0.429731028449694
+TCTPV.4L5.B1/BBParam#sigma_yp	(double:1) -> 0.0011756738938798902
+TCTPV.4L8.B1/BBParam#sigma_x	(double:1) -> 0.35160385772181535
+TCTPV.4L8.B1/BBParam#sigma_xp	(double:1) -> 0.0014369112865029717
+TCTPV.4L8.B1/BBParam#sigma_y	(double:1) -> 0.38189718415133744
+TCTPV.4L8.B1/BBParam#sigma_yp	(double:1) -> 0.001322930810975167
+TCTPV.4R1.B2/BBParam#sigma_x	(double:1) -> 0.6028409014664403
+TCTPV.4R1.B2/BBParam#sigma_xp	(double:1) -> 8.380711234249042E-4
+TCTPV.4R1.B2/BBParam#sigma_y	(double:1) -> 0.4301567642126258
+TCTPV.4R1.B2/BBParam#sigma_yp	(double:1) -> 0.0011745103031524816
+TCTPV.4R2.B2/BBParam#sigma_x	(double:1) -> 0.2090589306611523
+TCTPV.4R2.B2/BBParam#sigma_xp	(double:1) -> 0.0024166561549926794
+TCTPV.4R2.B2/BBParam#sigma_y	(double:1) -> 0.22821709231979892
+TCTPV.4R2.B2/BBParam#sigma_yp	(double:1) -> 0.002213784894036313
+TCTPV.4R5.B2/BBParam#sigma_x	(double:1) -> 0.6025003808028677
+TCTPV.4R5.B2/BBParam#sigma_xp	(double:1) -> 8.385447837646527E-4
+TCTPV.4R5.B2/BBParam#sigma_y	(double:1) -> 0.4301351526801547
+TCTPV.4R5.B2/BBParam#sigma_yp	(double:1) -> 0.0011745693147617304
+TCTPV.4R8.B2/BBParam#sigma_x	(double:1) -> 0.35158201599185335
+TCTPV.4R8.B2/BBParam#sigma_xp	(double:1) -> 0.0014370005533791814
+TCTPV.4R8.B2/BBParam#sigma_y	(double:1) -> 0.3817829981517315
+TCTPV.4R8.B2/BBParam#sigma_yp	(double:1) -> 0.0013233264812323342
+TDI.4L2/BBParam#sigma_x	
+TDI.4L2/BBParam#sigma_xp	
+TDI.4L2/BBParam#sigma_y	
+TDI.4L2/BBParam#sigma_yp	
+TDI.4R8/BBParam#sigma_x	
+TDI.4R8/BBParam#sigma_xp	
+TDI.4R8/BBParam#sigma_y	
+TDI.4R8/BBParam#sigma_yp	

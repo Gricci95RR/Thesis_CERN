@@ -1,0 +1,12 @@
+beam_energy = 0
+threshold_timestamp = 0
+threshold = 1e-06
+left_step_size = 0
+right_step_size = 0.005
+LU = 25
+LD = 25
+RU = -25
+RD = -25
+
+0
+0

@@ -1,0 +1,109 @@
+TCDD.4L2/BBCentre	
+TCDIH.29050/BBCentre	
+TCDIH.29205/BBCentre	
+TCDIH.29465/BBCentre	
+TCDIH.87441/BBCentre	
+TCDIH.87904/BBCentre	
+TCDIH.88121/BBCentre	
+TCDIV.20607/BBCentre	
+TCDIV.29012/BBCentre	
+TCDIV.29234/BBCentre	
+TCDIV.29509/BBCentre	
+TCDIV.87645/BBCentre	
+TCDIV.87804/BBCentre	
+TCDIV.88123/BBCentre	
+TCDQA.A4L6.B2/BBCentre	(double:1) -> -0.17
+TCDQA.A4R6.B1/BBCentre	(double:1) -> 0.4395
+TCL.4L1.B2/BBCentre	(double:1) -> 0.0
+TCL.4L5.B2/BBCentre	(double:1) -> 0.0
+TCL.4R1.B1/BBCentre	(double:1) -> 0.0
+TCL.4R5.B1/BBCentre	(double:1) -> 0.0
+TCL.5L1.B2/BBCentre	(double:1) -> 0.0
+TCL.5L5.B2/BBCentre	(double:1) -> 0.0
+TCL.5R1.B1/BBCentre	(double:1) -> 0.0
+TCL.5R5.B1/BBCentre	(double:1) -> 0.0
+TCL.6L1.B2/BBCentre	(double:1) -> 0.0
+TCL.6L5.B2/BBCentre	(double:1) -> 0.0
+TCL.6R1.B1/BBCentre	(double:1) -> 0.0
+TCL.6R5.B1/BBCentre	(double:1) -> 0.0
+TCLA.6L3.B2/BBCentre	(double:1) -> -0.6125
+TCLA.6R3.B1/BBCentre	(double:1) -> -0.09499999999999999
+TCLA.7L3.B2/BBCentre	(double:1) -> -0.0375
+TCLA.7R3.B1/BBCentre	(double:1) -> -0.955
+TCLA.A5L3.B2/BBCentre	(double:1) -> 0.05500000000000001
+TCLA.A5R3.B1/BBCentre	(double:1) -> 0.2225
+TCLA.A6L7.B2/BBCentre	(double:1) -> 0.5325
+TCLA.A6R7.B1/BBCentre	(double:1) -> 0.34
+TCLA.A7L7.B2/BBCentre	(double:1) -> 0.58
+TCLA.A7R7.B1/BBCentre	(double:1) -> 0.037500000000000006
+TCLA.B5L3.B2/BBCentre	(double:1) -> -0.42
+TCLA.B5R3.B1/BBCentre	(double:1) -> -0.7175
+TCLA.B6L7.B2/BBCentre	(double:1) -> -0.0025000000000000022
+TCLA.B6R7.B1/BBCentre	(double:1) -> 0.175
+TCLA.C6L7.B2/BBCentre	(double:1) -> 1.4175
+TCLA.C6R7.B1/BBCentre	(double:1) -> 1.735
+TCLA.D6L7.B2/BBCentre	(double:1) -> 0.07
+TCLA.D6R7.B1/BBCentre	(double:1) -> 2.0775
+TCLIA.4L8/BBCentre	
+TCLIA.4R2/BBCentre	
+TCLIB.6L8.B2/BBCentre	
+TCLIB.6R2.B1/BBCentre	
+TCP.6L3.B1/BBCentre	(double:1) -> 0.505
+TCP.6R3.B2/BBCentre	(double:1) -> 0.1275
+TCP.B6L7.B1/BBCentre	(double:1) -> 0.4175
+TCP.B6R7.B2/BBCentre	(double:1) -> -0.2975
+TCP.C6L7.B1/BBCentre	(double:1) -> -0.5125
+TCP.C6R7.B2/BBCentre	(double:1) -> 0.175
+TCP.D6L7.B1/BBCentre	(double:1) -> 0.0725
+TCP.D6R7.B2/BBCentre	(double:1) -> 0.55
+TCSG.272.BPMTST/BBCentre	
+TCSG.4L3.B2/BBCentre	(double:1) -> -0.2475
+TCSG.4R3.B1/BBCentre	(double:1) -> -0.3575
+TCSG.5L3.B1/BBCentre	(double:1) -> -0.6075
+TCSG.5R3.B2/BBCentre	(double:1) -> 0.155
+TCSG.6L7.B2/BBCentre	(double:1) -> 0.1475
+TCSG.6R7.B1/BBCentre	(double:1) -> -0.1825
+TCSG.A4L7.B1/BBCentre	(double:1) -> 0.6
+TCSG.A4L7.B2/BBCentre	(double:1) -> -0.3775
+TCSG.A4R7.B1/BBCentre	(double:1) -> -0.0675
+TCSG.A4R7.B2/BBCentre	(double:1) -> 0.4525
+TCSG.A5L3.B2/BBCentre	(double:1) -> -0.01
+TCSG.A5L7.B1/BBCentre	(double:1) -> 0.17
+TCSG.A5R3.B1/BBCentre	(double:1) -> -0.5325
+TCSG.A5R7.B2/BBCentre	(double:1) -> 0.1325
+TCSG.A6L7.B1/BBCentre	(double:1) -> -0.03749999999999999
+TCSG.A6R7.B2/BBCentre	(double:1) -> 0.3675
+TCSG.B4L7.B1/BBCentre	(double:1) -> 0.7875
+TCSG.B4R7.B2/BBCentre	(double:1) -> 0.03
+TCSG.B5L3.B2/BBCentre	(double:1) -> -0.3825
+TCSG.B5L7.B1/BBCentre	(double:1) -> 0.022499999999999996
+TCSG.B5L7.B2/BBCentre	(double:1) -> -0.007500000000000034
+TCSG.B5R3.B1/BBCentre	(double:1) -> -0.2925
+TCSG.B5R7.B1/BBCentre	(double:1) -> 0.075
+TCSG.B5R7.B2/BBCentre	(double:1) -> 0.09000000000000002
+TCSG.D4L7.B1/BBCentre	(double:1) -> -0.2575
+TCSG.D4R7.B2/BBCentre	(double:1) -> -0.27
+TCSG.D5L7.B2/BBCentre	(double:1) -> -0.1825
+TCSG.D5R7.B1/BBCentre	(double:1) -> 0.0925
+TCSG.E5L7.B2/BBCentre	(double:1) -> -0.08
+TCSG.E5R7.B1/BBCentre	(double:1) -> 0.0
+TCSP.A4L6.B2/BBCentre	(double:1) -> -0.27
+TCSP.A4R6.B1/BBCentre	(double:1) -> 0.1225
+TCTPH.4L1.B1/BBCentre	(double:1) -> -0.5525000000000002
+TCTPH.4L2.B1/BBCentre	(double:1) -> 0.2474999999999996
+TCTPH.4L5.B1/BBCentre	(double:1) -> -1.2624999999999997
+TCTPH.4L8.B1/BBCentre	(double:1) -> 2.6849999999999996
+TCTPH.4R1.B2/BBCentre	(double:1) -> 0.009999999999999787
+TCTPH.4R2.B2/BBCentre	(double:1) -> -0.1599999999999997
+TCTPH.4R5.B2/BBCentre	(double:1) -> 2.6075000000000004
+TCTPH.4R8.B2/BBCentre	(double:1) -> -4.055
+TCTPV.4L1.B1/BBCentre	(double:1) -> 1.847
+TCTPV.4L2.B1/BBCentre	(double:1) -> -0.9725000000000001
+TCTPV.4L5.B1/BBCentre	(double:1) -> 0.015000000000000124
+TCTPV.4L8.B1/BBCentre	(double:1) -> -1.1575000000000002
+TCTPV.4R1.B2/BBCentre	(double:1) -> 1.0300000000000002
+TCTPV.4R2.B2/BBCentre	(double:1) -> -1.2325
+TCTPV.4R5.B2/BBCentre	(double:1) -> 0.4900000000000002
+TCTPV.4R8.B2/BBCentre	(double:1) -> 0.9675000000000002
+TDI.4L2/BBCentre	
+TDI.4R8/BBCentre	

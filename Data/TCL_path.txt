@@ -1,0 +1,56 @@
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Right_1461056855140_-9.255.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Right_1461056853139_-9.7.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Left_1461056854139_9.48.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Left_1461056759983_9.195.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Left_1461056975590_9.005.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Left_1461056883844_9.525.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Right_1461056757983_-9.63.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Left_1461056882843_9.745.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Left_1461059336992_9.075.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Left_1461056884844_9.31.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Left_1461056976591_8.785.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Left_1461059334992_9.515.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Left_1461059333991_9.735.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Left_1461056884258_9.455.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Right_1461056758983_-9.415.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Left_1461059335991_9.295.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Right_1461056759983_-9.195.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Left_1461056883258_9.68.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Left_1461056757983_9.63.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Right_1461056974589_-9.225.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Right_1461056975590_-9.005.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Right_1461056854139_-9.48.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Left_1461056855140_9.255.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Left_1461056758983_9.415.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Right_1461056856141_-9.035.csv
+Path: GabyPhD2019-Training_data/data/no_spike/2016-04-19_f/Left_1461056853139_9.7.csv
+Path: GabyPhD2019-Training_data/data/spike/2016-04-19_f/Left_1461060968217_0.52.csv
+Path: GabyPhD2019-Training_data/data/spike/2016-04-19_f/Right_1461060442814_-1.195.csv
+Path: GabyPhD2019-Training_data/data/spike/2016-04-19_f/Left_1461057497651_6.0.csv
+Path: GabyPhD2019-Training_data/data/spike/2016-04-19_f/Right_1461060515813_-1.185.csv
+Path: GabyPhD2019-Training_data/data/spike/2016-04-19_f/Right_1461057235011_1.03.csv
+Path: GabyPhD2019-Training_data/data/spike/2016-04-19_f/Left_1461057500652_5.98.csv
+Path: GabyPhD2019-Training_data/data/spike/2016-04-19_f/Left_1461061345975_-1.755.csv
+Path: GabyPhD2019-Training_data/data/spike/2016-04-19_f/Left_1461061351976_-1.765.csv
+Path: GabyPhD2019-Training_data/data/spike/2016-04-19_f/Left_1461057698538_0.715.csv
+Path: GabyPhD2019-Training_data/data/spike/2016-04-19_f/Left_1461061354976_-1.83.csv
+Path: GabyPhD2019-Training_data/data/spike/2016-04-19_f/Right_1461057209010_1.015.csv
+Path: GabyPhD2019-Training_data/data/spike/2016-04-19_f/Left_1461057204010_4.115.csv
+Path: GabyPhD2019-Training_data/data/spike/2016-04-19_f/Left_1461057454647_6.04.csv
+Path: GabyPhD2019-Training_data/data/spike/2016-04-19_f/Right_1461057507652_0.57.csv
+Path: GabyPhD2019-Training_data/data/spike/2016-04-19_f/Left_1461059385000_2.725.csv
+Path: GabyPhD2019-Training_data/data/spike/2016-04-19_f/Right_1461060975217_-0.61.csv
+Path: GabyPhD2019-Training_data/data/spike/2016-04-19_f/Left_1461061409980_-2.3.csv
+Path: GabyPhD2019-Training_data/data/spike/2016-04-19_f/Left_1461057333174_1.885.csv
+Path: GabyPhD2019-Training_data/data/spike/2016-04-19_f/Right_1461060873218_-0.625.csv
+Path: GabyPhD2019-Training_data/data/spike/2016-04-19_f/Left_1461057131002_4.15.csv
+Path: GabyPhD2019-Training_data/data/spike/2016-04-19_f/Right_1461060995217_-0.59.csv
+2018
+Data/Auto_data/1-test_2018/1522829837_TCL.6L1.B2_Align
+Data/Auto_data/1-test_2018/1522829841_TCL.5R1.B1_Align
+Data/Auto_data/1-test_2018/1522829842_TCL.6R1.B1_Align
+Data/Auto_data/2018_MD3/1536862684_TCL.4L1.B2_Align
+Data/Auto_data/2018_MD3/1536862685_TCL.6L1.B2_Align
+
+
+
